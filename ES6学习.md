@@ -1,0 +1,1 @@
+> 前言：什么是ES6？ECMAScript 6（简称ES6）是JavaScript语言的下一代标准，已经在2015年6月正式发布了。其中相比较于ES5新增了诸多的特性，并且ES6可转换为ES5的语法。->[在线ES6转换为ES5工具](http://google.github.io/traceur-compiler/demo/repl.html#%0A)。本文参考了阮一峰老师的[《ES6标准入门》](http://es6.ruanyifeng.com/)。
