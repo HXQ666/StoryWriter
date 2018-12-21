@@ -39,7 +39,7 @@ function n() {
 	let a=2;//Uncaught SyntaxError: Identifier 'a' has already been declared
 }
 ```
-### 二、const关键字  
+## 二、const关键字  
 #### 1、const声明一个只读的常量。一旦声明，常量的值就不能改变。
 ```
 const PI = 3.1415;
