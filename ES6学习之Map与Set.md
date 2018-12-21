@@ -139,8 +139,8 @@ for (let value of map.values()) {
 }
 for (let item of map.entries()) {
   console.log(item[0], item[1]);
-  输出 name 打伞的鱼666
-		  title ES6学习之Map与Set
+//输出 name 打伞的鱼666
+//    title ES6学习之Map与Set
 }
 // 或者
 for (let [key, value] of map.entries()) {
@@ -150,6 +150,9 @@ for (let [key, value] of map.entries()) {
 for (let [key, value] of map) {
   console.log(key, value);
 }
+map.forEach((value, key) => console.log(key + ' : ' + value));
+//输出 name : 打伞的鱼666
+//	 title : ES6学习之Map与Set
 
 ```
 
