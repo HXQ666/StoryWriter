@@ -155,4 +155,16 @@ map.forEach((value, key) => console.log(key + ' : ' + value));
 //	 title : ES6学习之Map与Set
 
 ```
-
+接下来我们看下Map数据结构如何与其他数据类型进行互相转换:  
+①.与数组进行转换  
+```
+[...map];//输出[["name", "打伞的鱼666"],["title", "ES6学习之Map与Set"]]
+```
+②.数组 转为 Map
+将数组传入 Map 构造函数即可
+```
+new Map([
+  ['name', '打伞的鱼666'],
+  ['title', 'ES6学习之Map与Set']
+]);
+```
