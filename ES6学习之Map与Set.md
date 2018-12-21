@@ -166,7 +166,7 @@ new Map([
   ['title', 'ES6学习之Map与Set']
 ]);
 ```
-③.与对象进行互转
+②.与对象进行互转
 ```
 //Map转为对象，如果键为字符串则能正常转换为对象，但是键不是字符串时，会先把键转换为字符串再转换成对象。
 function strMapToObj(strMap) {
@@ -184,11 +184,6 @@ function objToStrMap(obj) {
   }
   return strMap;
 }
-```
-
-④.对象转为 Map
-```
-
 ```
 ⑤.Map 转为 JSON
 
