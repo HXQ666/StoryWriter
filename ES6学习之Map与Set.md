@@ -185,5 +185,37 @@ function objToStrMap(obj) {
   return strMap;
 }
 ```
-⑤.Map 转为 JSON
+③.与 JSON进行互转
+```
+//Map转Json有两种情况，一种键是字符串的，我们可以先转为对象在转json
+function strMapToJson(strMap) {
+  return JSON.stringify(strMapToObj(strMap));
+}
+//若不是字符串，我们可以先转为数组再转Json
+function mapToArrayJson(map) {
+  return JSON.stringify([...map]);
+}
+//Json转Map，一般情况下都是字符串类型，我们可以直接转：
+function jsonToStrMap(jsonStr) {
+  return objToStrMap(JSON.parse(jsonStr));
+}
+//但是若是Json本身就是一个数组，就可以用Map转为数组json的逆操作
+function jsonToMap(jsonStr) {
+  return new Map(JSON.parse(jsonStr));
+}
+```
+## 四、WeakMap 
+WeakMap与WeakSet有两点相同点，也刚好是跟Map的不同点： 
+WeakMap只接受对象作为键名（null除外），不接受其他类型的值作为键名。  
+WeakMap的键名所指向的对象，不计入垃圾回收机制。与WeakSet一样，WeakMap也没有size属性也不能遍历，也不支持clear()
+接下来我们看下他的语法：  
+```
+const map = new WeakMap();
+const key = {foo: 1};
+map.set(key,'1');//新增成员,返回一个新的WeakMap结构
+map.get(key);//获取值，返回'1'
+map.has(key);//判断是否有某个成员，返回布尔值
+map.delete(key);//删除某个成员，返回布尔值
+```
+WeakMap与WeakSet的一个用途是储存 DOM 节点，当这些节点从文档移除时，我们不用考虑WeakMap的内存回收问题，所以不用担心会引发内存泄漏。
 
