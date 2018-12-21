@@ -112,6 +112,44 @@ map.size; // Map属性，判断成员数量，输出为2
 map.has('name'); // 判断是否有这个成员，输出布尔值
 map.get('name'); // 参数为键，输出为键值
 map.set(1, 'aaa');//设置新成员，若是同一个键赋值多次，则后面那次会覆盖前面那次
-new Map().get('content');//获取未知键则返回undefined
+map.get('content');//获取未知键则返回undefined
+map.delete('name');//删除某个成员，返回布尔值
+map.clear();//清除所有成员，没有返回值
+```
+特别注意的是，只有同一个对象，Map结构才视为一个键，例子如下：
+```
+const map = new Map();
+map.set(['a'], 555);
+map.get(['a']) // 内存地址不同，输出为undefined
+const b=['b'];
+map.set(b,'b');
+map.get(b);//同一个对象，输出为'b';
+```
+Map与Set的遍历器一致，也有四种的遍历器。需要注意的是，Map遍历的顺序是插入的顺序。
+```
+const map = new Map([
+  ['name', '打伞的鱼666'],
+  ['title', 'ES6学习之Map与Set']
+]);
+for (let key of map.keys()) {
+  console.log(key);//输出 name  title
+}
+for (let value of map.values()) {
+  console.log(value);//输出 打伞的鱼666  ES6学习之Map与Set
+}
+for (let item of map.entries()) {
+  console.log(item[0], item[1]);
+  输出 name 打伞的鱼666
+		  title ES6学习之Map与Set
+}
+// 或者
+for (let [key, value] of map.entries()) {
+  console.log(key, value);
+}
+//或者
+for (let [key, value] of map) {
+  console.log(key, value);
+}
+
 ```
 
