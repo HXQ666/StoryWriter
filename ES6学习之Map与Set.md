@@ -156,20 +156,19 @@ map.forEach((value, key) => console.log(key + ' : ' + value));
 
 ```
 接下来我们看下Map数据结构如何与其他数据类型进行互相转换:  
-①.与数组进行转换  
+①.与数组进行互转
 ```
+//Map转为数组
 [...map];//输出[["name", "打伞的鱼666"],["title", "ES6学习之Map与Set"]]
-```
-②.数组 转为 Map
-将数组传入 Map 构造函数即可
-```
+//数组 转为 Map将数组传入 Map 构造函数即可
 new Map([
   ['name', '打伞的鱼666'],
   ['title', 'ES6学习之Map与Set']
 ]);
 ```
-③.Map 转为对象
+③.与对象进行互转
 ```
+//Map转为对象，如果键为字符串则能正常转换为对象，但是键不是字符串时，会先把键转换为字符串再转换成对象。
 function strMapToObj(strMap) {
   let obj = Object.create(null);
   for (let [key,value] of strMap) {
@@ -177,14 +176,19 @@ function strMapToObj(strMap) {
   }
   return obj;
 }
-strMapToObj(map);
-```
-如果键为字符串则能正常转换为对象，但是键不是字符串时，会先把键转换为字符串再转换成对象。
-④.对象转为 Map
+//对象转为Map
 function objToStrMap(obj) {
   let strMap = new Map();
-  for (let k of Object.keys(obj)) {
-    strMap.set(k, obj[k]);
+  for (let key of Object.keys(obj)) {
+    strMap.set(key, obj[key]);
   }
   return strMap;
 }
+```
+
+④.对象转为 Map
+```
+
+```
+⑤.Map 转为 JSON
+
