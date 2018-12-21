@@ -168,3 +168,23 @@ new Map([
   ['title', 'ES6学习之Map与Set']
 ]);
 ```
+③.Map 转为对象
+```
+function strMapToObj(strMap) {
+  let obj = Object.create(null);
+  for (let [key,value] of strMap) {
+    obj[key] = value;
+  }
+  return obj;
+}
+strMapToObj(map);
+```
+如果键为字符串则能正常转换为对象，但是键不是字符串时，会先把键转换为字符串再转换成对象。
+④.对象转为 Map
+function objToStrMap(obj) {
+  let strMap = new Map();
+  for (let k of Object.keys(obj)) {
+    strMap.set(k, obj[k]);
+  }
+  return strMap;
+}
