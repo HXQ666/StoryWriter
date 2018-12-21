@@ -34,5 +34,6 @@ let [a,b=2,c]=[1,null,3];//a==1,b==2,c==3;
 ```
 默认值可以引用解构赋值的其他变量，但该变量必须已经声明。
 ```
-let [a=1,b=a];//a==1,b==1;
+let [a=1,b=a]=[];//a==1,b==1;
+let [a=b, b=1] = []; //Uncaught ReferenceError: b is not defined
 ```
