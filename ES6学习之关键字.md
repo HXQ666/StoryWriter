@@ -1,6 +1,5 @@
 > 前言：什么是ES6？ECMAScript 6（简称ES6）是JavaScript语言的下一代标准，已经在2015年6月正式发布了。其中相比较于ES5新增了诸多的特性，并且ES6可转换为ES5的语法。->[在线ES6转换为ES5工具](http://google.github.io/traceur-compiler/demo/repl.html#%0A)。  
 > 本系列学习随笔参考了阮一峰老师的[《ES6标准入门》](http://es6.ruanyifeng.com/)。
-
 ## 一、let关键字
 #### 1、解决变量提升现象
 我们在js中定义变量时，用var声明会出现这种情况：  
@@ -8,9 +7,7 @@
 console.log(a); //不会报错，输出为undefined
 var a=1;
 ```
-
 这就是js的变量提升现象，当浏览器在解析函数时，会将var 声明的变量声明到函数的最前端，导致变量在声明之前使用不会报错，此时let关键字就解决了这个问题。let的作用域只在当前的代码块起作用。 
-
 ```
 console.log(a); //ReferenceError:a is not defined
 let a=1;
@@ -26,9 +23,6 @@ function n() {
   console.log(a); // 输出1
 };
 ```
-
-
-
 #### 3、同一代码块不能重复定义
 ```
 {
@@ -64,7 +58,6 @@ if (true) {
 }
 console.log(PI); // Uncaught ReferenceError: PI is not defined
 ```
-
 ## 三、super 关键字
 我们都知道，this关键字总是指向函数所在的当前对象，ES6又新增super关键字，指向当前对象的原型对象。他有两种使用方式：  
 #### 1、当做函数使用  
