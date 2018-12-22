@@ -83,3 +83,18 @@ let {0 : first, [arr.length - 1] : last} = arr;
 var {a = 1} = {};//a==1
 ```
 ## 四、字符串的解构赋值
+字符串也可以解构赋值：
+```
+const [a,b,c,d]=['fish'];//a=='f';b=='i';c=='s';d=='h';
+//还可以解构他的属性
+const [length:len]=['fish'];//len==5
+```
+## 五、函数参数的解构赋值  
+函数的参数也能解构赋值
+```
+function add([x, y]){
+  return x + y;
+}
+add([1, 2]); // 3
+```
+上面的例子中，一传入参数就会自动解构赋值成x==1 y==2
