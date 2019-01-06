@@ -38,7 +38,8 @@ Less是基于CSS的一种扩展技术，包含变量、混合、函数、运算�
 ![enter description here](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546779910071.png)
 这样我们就安装了less，我们也可以看less的编译器lessc的版本，那我们如何将一个less文件编译成一个css文件呢？
 ![enter description here](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546780584316.png)
-利用less编译器即可将指定的less编译成css到指定的目录底下。
+利用less编译器即可将指定的less编译成css到指定的目录底下。  
+缺点：使用麻烦 优点：提高站点性能；
 #### 4、Less语法
 本节旨在教会大家如何使用less，less的语法与魅力请有兴趣的同学移步[Less中文网](http://lesscss.cn/)或者本人将在未来写一篇有关Less的详细文章，敬请期待。
 
