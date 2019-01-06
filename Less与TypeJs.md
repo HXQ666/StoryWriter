@@ -1,4 +1,4 @@
-> 前言：讲起前端，我们就不能不讲CSS与Javascript，在这两种技术广泛应用在web应用的今天，他们的扩展也是层出不穷，css的扩展有Less、Sass、Stylus 等，js的超集有Typescript等。今天我们就简单来聊聊Less与Typescript以及webpage技术。本文为简单普及性知识。
+> 前言：讲起前端，我们就不能不讲CSS与Javascript，在这两种技术广泛应用在web应用的今天，他们的扩展也是层出不穷，css的扩展有Less、Sass、Stylus 等，js的超集有Typescript等。今天我们就简单来聊聊Less与Typescript以及webpage技术。本文为简单普及性知识，旨在让大家学会怎么去用这三项技术，以及这三项技术在开发的过程中给我们带来的便利性与好处。
 ## 一、Less
 #### 1、什么是Less？
 Less是基于CSS的一种扩展技术，包含变量、混合、函数、运算，可以简化CSS代码，降低维护成本。必须通过解析器将less文件转换为css文件供页面使用。Less让 CSS 更易维护、方便制作主题、扩充。Less 可以运行在 Node 或浏览器端。[Less中文网](http://lesscss.cn/)。
@@ -47,3 +47,12 @@ Less是基于CSS的一种扩展技术，包含变量、混合、函数、运算�
 TypeScript是一种由微软开发的自由和开源的编程语言。它是JavaScript的一个超集，而且本质上向这个语言添加了可选的静态类型和基于类的面向对象编程。截止目前，Typescript已经发布了最新的3.1版本。[Typescript中文网](https://www.tslang.cn);
 #### 2、为什么要去用Typescript？
 ypeScript的设计目的应该是解决JavaScript的“痛点”：弱类型和没有命名空间，导致很难模块化，不适合开发大型程序。另外它还提供了一些语法糖来帮助大家更方便地实践面向对象的编程。
+#### 3、如何使用Typescript
+<1>、安装Typescript
+Visual Studio 2017和Visual Studio 2015 Update 3默认包含了TypeScript。 如果你的Visual Studio还没有安装TypeScript，你可以下载它。
+既然我们讲到了npm，我们也可以用npm去安装Typescript。
+![enter description here](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546782080526.png)
+如图，我们也可以去看Typescript的编译器的版本。
+<2> 、 使用Typescript
+我们接下来稍微介绍一下Typescript的常用语法：
+①、类
