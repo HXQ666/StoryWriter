@@ -11,5 +11,13 @@ Less是基于CSS的一种扩展技术，包含变量、混合、函数、运算�
 	-moz-border-radius:3px;
 }
 ```
-以上是设置boder的css，但是现在我们要将3px改成5px怎么办呢，我们就要一个个去改，如果多了我们就会很烦，还有可能漏掉一两个没改，在设置颜色中此类问题更为严重，
+以上是设置boder的css，但是现在我们要将3px改成5px怎么办呢，我们就要一个个去改，如果多了我们就会很烦，还有可能漏掉一两个没改，在设置颜色中此类问题更为严重，此时CSS的预编译技术就出现了。在Less中我们就可以把上述代码改写成如下：
+```
+@borderSize:3px
+.border{
+	boder-radius:@borderSize;
+	-webkit-border-radius:@borderSize;
+	-moz-border-radius:@borderSize;
+}
+```
 #### 3、怎么去用Less
