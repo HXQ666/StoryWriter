@@ -30,4 +30,10 @@ Less是基于CSS的一种扩展技术，包含变量、混合、函数、运算�
 
 当浏览器加载后less.js后文件，会去解析rel为stylesheet/less文件，并将转译后的内容生成style元素内嵌在HTML的head节点中，如下图：
 ![enter description here](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546779602154.png)
-<2>
+
+此种方式缺点：耗性能，优点：简单开发时候无需一直预编译；
+<2>、服务端用法
+我们可以用nodejs将less文件编译成css，再引用css文件。
+上节课我们已经讲过了npm与nodejs的用法，接下来我们就演示一遍安装less：
+![enter description here](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546779910071.png)
+这样我们就安装了less，我们也可以看less的编译器lessc的版本
