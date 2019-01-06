@@ -40,8 +40,9 @@ Less是基于CSS的一种扩展技术，包含变量、混合、函数、运算�
 ![enter description here](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546780584316.png)
 利用less编译器即可将指定的less编译成css到指定的目录底下。
 #### 4、Less语法
-本节旨在教会大家如何使用less，less的语法与魅力请有兴趣的同学移步[Less中文网](http://lesscss.cn/)或者本人将在未来两周写一篇有关Less的详细文章，敬请期待。
+本节旨在教会大家如何使用less，less的语法与魅力请有兴趣的同学移步[Less中文网](http://lesscss.cn/)或者本人将在未来写一篇有关Less的详细文章，敬请期待。
 
 ## 二、TypeScript
 #### 1、什么是Typescript？
-TypeScript是一种由微软开发的自由和开源的编程语言。它是JavaScript的一个超集，而且本质上向这个语言添加了可选的静态类型和基于类的面向对象编程。安德斯·海尔斯伯格，C#的首席架构师，已工作于TypeScript的开发。2012年十月份，微软发布了首个公开版本的TypeScript，2013年6月19日，在经历了一个预览版之后微软正式发布了正式版TypeScript 0.9，向未来的TypeScript 1.0版迈进了很大一步。
+TypeScript是一种由微软开发的自由和开源的编程语言。它是JavaScript的一个超集，而且本质上向这个语言添加了可选的静态类型和基于类的面向对象编程。截止目前，Typescript已经发布了最新的3.1版本。[Typescript中文网](https://www.tslang.cn);
+#### 2、
