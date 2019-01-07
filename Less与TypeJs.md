@@ -91,18 +91,28 @@ Less是基于CSS的一种扩展技术，包含变量、混合、函数、运算�
 
 <3>、函数
 ```
-// func.less
+// less语法
 .border-radius(@radius) {
   -webkit-border-radius: @radius;
      -moz-border-radius: @radius;
           border-radius: @radius;
 }
-
 #header {
   .border-radius(4px);
 }
 .button {
   .border-radius(6px);
+}
+//编译成css
+#header {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.button {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
 }
 
 作者：dkvirus
