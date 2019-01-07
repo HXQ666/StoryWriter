@@ -251,4 +251,5 @@ npm install -g webpack-cli
 上面这种方法是全局去告诉webpack要编译哪个文件，那我们也可以用另外一种方法：
 我们先用 npm init -y 初始化项目，新建一个package.json文件。
 ![enter description here](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546872088375.png)
-这里面包含了项目的很多信息，记录项目的描述信息：项目作者、项目描述、项目依赖哪些包、插件配置信息等等
+这里面包含了项目的很多信息，记录项目的描述信息：项目作者、项目描述、项目依赖哪些包、插件配置信息等等。
+其中scripts对象是指定了运行脚本命令的npm命令行缩写
