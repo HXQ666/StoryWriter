@@ -221,4 +221,5 @@ alert(p.getname());
 p.setname('李四');
 alert(p.getname());
 ```
+我们可以看到,其实Ts的类跟我们后端语言C#之类的非常相像。
 ## 三、webpack
