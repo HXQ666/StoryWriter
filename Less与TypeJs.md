@@ -116,7 +116,7 @@ Less是基于CSS的一种扩展技术，包含变量、混合、函数、运算�
 }
 ```
 可以看到，这里就用到了函数的概念，在 #header 和 .button 中分别传入不同的参数，结果也就生成不同的代码。
-本节旨在教会大家如何使用less，less的语法与魅力请有兴趣的同学移步[Less中文网](http://lesscss.cn/)或者本人将在未来写一篇有关Less的详细文章，敬请期待。
+本节旨在教会大家如何使用less以及less的基本语法，这里还有许多好用的语法没有讲到，比如内置函数、运算、神奇的import等等。less的语法与魅力请有兴趣的同学移步[Less中文网](http://lesscss.cn/)或者本人将在未来写一篇有关Less的详细文章，敬请期待。
 
 ## 二、TypeScript
 #### 1、什么是Typescript？
@@ -138,6 +138,18 @@ Visual Studio 2017和Visual Studio 2015 Update 3默认包含了TypeScript。 如
 - 不带任何输入文件的情况下调用tsc，编译器会从当前目录开始去查找tsconfig.json文件，逐级向上搜索父目录。  
 - 不带任何输入文件的情况下调用tsc，且使用命令行参数--project（或-p）指定一个包含tsconfig.json文件的目录。  
 - 当命令行上指定了输入文件时，tsconfig.json文件会被忽略。    
+
+接下来我们根据tsconfig.json文件与vscode来配置一个在编写ts文件时按保存可以时时编译成js文件的方法：
+首先，我们先在项目的根目录建一个ts文件：
+![enter description here](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546820712430.png)
+然后，我们去tsconfig.json配置要生成的js目录：
+![enter description here](https://markdown.xiaoshujiang.com/img/spinner.gif "[[[1546821074744]]]" )
+接下来点击vs上方菜单的终端，点击运行任务，选择tsc-监视：
+![enter description here](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546820802687.png)
+此时终端会显示成这样，证明监视成功：
+![enter description here](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546820860038.png)
+我们在ts文件中写ts代码，按ctrl+s保存时，会自动在我们设置好的目录下生成js文件：
+![enter description here](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546820992268.png)
 
 配置项的具体含义请移步官网的[Typescript配置项说明](https://www.tslang.cn/docs/handbook/tsconfig-json.html)
 
