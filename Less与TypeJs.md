@@ -202,5 +202,24 @@ var p= new person('张三');
 alert( p.getname());
 p.setname('李四');
 alert(p.getname())
+//编译后的js
+var person = /** @class */ (function () {
+    function person(name) {
+        this.name = name;
+    }
+    person.prototype.getname = function () {
+        return this.name;
+    };
+    ;
+    person.prototype.setname = function (name) {
+        this.name = name;
+    };
+    return person;
+}());
+var p = new person('张三');
+alert(p.getname());
+p.setname('李四');
+alert(p.getname());
+
 ```
 ## 三、webpack
