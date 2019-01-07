@@ -85,8 +85,31 @@ Less是基于CSS的一种扩展技术，包含变量、混合、函数、运算�
     .bordered;
 }
 ```
-混合也是减少代码书写量的一个方法。
+- 混合也是减少代码书写量的一个方法；
+- 混合的类名在定义的时候加上小括弧 ()，那么在转译成 css 文件时就不会出现；
+- 混合的类名在被调用的时候加上小括弧 ()和不加上小括弧 ()是一样的效果，看个人习惯
 
+<3>、函数
+```
+// func.less
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+
+#header {
+  .border-radius(4px);
+}
+.button {
+  .border-radius(6px);
+}
+
+作者：dkvirus
+链接：https://www.jianshu.com/p/48018e5da7dd
+來源：简书
+简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。
+```
 本节旨在教会大家如何使用less，less的语法与魅力请有兴趣的同学移步[Less中文网](http://lesscss.cn/)或者本人将在未来写一篇有关Less的详细文章，敬请期待。
 
 ## 二、TypeScript
