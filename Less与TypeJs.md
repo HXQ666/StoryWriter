@@ -234,3 +234,4 @@ npm install -g webpack
 npm install -g webpack-cli
 ```
 安装完毕后我们查看版本如下图：
+![enter description here](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546868064591.png)
