@@ -158,6 +158,18 @@ Visual Studio 2017和Visual Studio 2015 Update 3默认包含了TypeScript。 如
 
 #### 4、Typescript常用语法概要
 我们接下来稍微介绍一下Typescript的常用语法：
-①、类
+<1>、数据类型
+```
+布尔类型:boolean
+数字类型:number
+字符串类型:string
+数组类型:array
+元组类型:tuple
+枚举类型:enum(新)
+任意类型:any(新)
+null和undefined
+void类型(新)
+never类型(新)
+```
 
 ## 三、webpack
