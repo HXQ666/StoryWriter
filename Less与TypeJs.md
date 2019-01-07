@@ -242,4 +242,8 @@ npm install -g webpack-cli
 接下来我们来做一个最简单的webpack的打包编译。
 我首先在vscode新建一个文件夹webpackDemo,新建一个hellowebpack.js的文件，写几句js代码
 接下来我们在这个目录下运行命令：
-![enter description here](https://markdown.xiaoshujiang.com/img/spinner.gif "[[[1546869950896]]]" )
+![enter description here](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546869950896.png)
+从警告信息中我们就可以知道，我们没有设定mode，webpack分为开发模式和生产模式。我们看下这两种模式的编译
+![
+](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546870319896.png)
+![enter description here](https://markdown.xiaoshujiang.com/img/spinner.gif "[[[1546870366886]]]" )
