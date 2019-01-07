@@ -41,6 +41,52 @@ Less是基于CSS的一种扩展技术，包含变量、混合、函数、运算�
 利用less编译器即可将指定的less编译成css到指定的目录底下。  
 缺点：使用麻烦 优点：提高站点性能；
 #### 4、Less语法
+我们在这里简单的说几点less的语法使用。
+<1>、变量
+```
+//less写法
+@color:#fff;
+@classname: header;
+.@classname{
+	background-color:@color
+}
+//编译后的css
+.header{
+	background-color:#fff
+}
+```
+从例子中我们就可以看到，变量不仅仅可以作为样式属性值：background-color: @color;，还可以作为类名：.@classname 表示的就是 .header，less编译时使用 @ 符号获取变量，仅仅将 @变量名 看成是一个字符串。这样我们就有很多应用场景了，可以让我们的代码减少了很多的重复性，也利于后期的修改与维护。
+<2>、混合
+```
+//css语法
+#menu a {
+    color: #111;
+    border-top: dotted 1px black;
+    border-bottom: solid 2px black;
+}
+#menu span {
+    height: 16px;
+    border-top: dotted 1px black;
+    border-bottom: solid 2px black;
+}
+//less语法
+.bordered {
+    border-top: dotted 1px black;
+    border-bottom: solid 2px black;
+}
+
+#menu a {
+    color: #111;
+    .bordered;
+}
+
+#menu span {
+    height: 16px;
+    .bordered;
+}
+```
+
+
 本节旨在教会大家如何使用less，less的语法与魅力请有兴趣的同学移步[Less中文网](http://lesscss.cn/)或者本人将在未来写一篇有关Less的详细文章，敬请期待。
 
 ## 二、TypeScript
