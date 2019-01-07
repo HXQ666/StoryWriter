@@ -225,6 +225,8 @@ alert(p.getname());
 ## 三、webpack
 #### 1、什么是webpack？
 在当今的社会，作为 web 开发，会越来越意识到前端的重要性，随着 HTML5、 CSS3、 ES6 各种技术的发展，前端的开发越来越庞大。甚至有些应用就是单页面应用(SPA)，纯 JavaScript 开发，JavaScript 文件的管理也是一个问题。JavaScript 模块化编程，已经成为一个迫切的需求，这就出现了 JavaScript 的模块解决方案。webpack是一个前端模块化方案，更侧重模块打包，我们可以把开发中的所有资源（图片、js 文件、css 文件等）都看成模块，通过 loader（加载器）和 plugins（插件）对资源进行处理，打包成符合生产环境部署的前端资源。
+总的来说就是如下图：
+![enter description here](https://markdown.xiaoshujiang.com/img/spinner.gif "[[[1546868168518]]]" )
 #### 2、如何使用webpack
 <1> 、安装webpack
 安装webpack首先必须要有nodejs的环境，我们用npm工具去安装webpack，命令为：
