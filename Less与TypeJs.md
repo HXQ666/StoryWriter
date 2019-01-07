@@ -1,4 +1,5 @@
 > 前言：讲起前端，我们就不能不讲CSS与Javascript，在这两种技术广泛应用在web应用的今天，他们的扩展也是层出不穷，css的扩展有Less、Sass、Stylus 等，js的超集有Typescript等。今天我们就简单来聊聊Less与Typescript以及webpage技术。本文为简单普及性知识，旨在让大家学会怎么去用这三项技术，以及这三项技术在开发的过程中给我们带来的便利性与好处。
+> 本文借鉴了HANS许的[Less与TypeScript的简单理解与应用，并使用WebPack打包静态页面](https://www.cnblogs.com/xuhuale/p/10229627.html)以及dkvirus的[三十分钟学会 Less](https://www.jianshu.com/p/48018e5da7dd)。
 ## 一、Less
 #### 1、什么是Less？
 Less是基于CSS的一种扩展技术，包含变量、混合、函数、运算，可以简化CSS代码，降低维护成本。必须通过解析器将less文件转换为css文件供页面使用。Less让 CSS 更易维护、方便制作主题、扩充。Less 可以运行在 Node 或浏览器端。[Less中文网](http://lesscss.cn/)。
@@ -143,7 +144,7 @@ Visual Studio 2017和Visual Studio 2015 Update 3默认包含了TypeScript。 如
 首先，我们先在项目的根目录建一个ts文件：
 ![enter description here](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546820712430.png)
 然后，我们去tsconfig.json配置要生成的js目录：
-![enter description here](https://markdown.xiaoshujiang.com/img/spinner.gif "[[[1546821074744]]]" )
+![enter description here](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546821074744.png)
 接下来点击vs上方菜单的终端，点击运行任务，选择tsc-监视：
 ![enter description here](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546820802687.png)
 此时终端会显示成这样，证明监视成功：
