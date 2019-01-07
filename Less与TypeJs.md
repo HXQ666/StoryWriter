@@ -230,7 +230,7 @@ alert(p.getname());
 安装webpack首先必须要有nodejs的环境，我们用npm工具去安装webpack，命令为：
 ```
 npm install -g webpack
-//在webpack 3中，webpack本身和它的CLI以前都是在同一个包中，但在第4版中，他们已经将两者分开来更好地管理它们。
+/*在webpack 3中，webpack本身和它的CLI以前都是在同一个包中，但在第4版中，他们已经将两者分开来更好地管理它们*/
 npm install -g webpack-cli
 ```
-如下图：
+安装完毕后我们查看版本如下图：
