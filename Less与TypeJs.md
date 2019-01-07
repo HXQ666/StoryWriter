@@ -173,10 +173,15 @@ never类型(新)
 ```
 Typescript为了使代码更加规范与更容易维护，新增了数据类型校验：
 ```
-//js代码
+//js代码,es5的正确写法
 var flag=true;
 flag=1;
-
 ```
-
+但是在Typescript这样写是错误的。写ts变量时必须指定数据类型。
+```
+//ts写法
+var flag:boolean=true;
+flag=1;//直接报错。
+```
+<2>、
 ## 三、webpack
