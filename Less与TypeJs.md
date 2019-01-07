@@ -115,6 +115,7 @@ Less是基于CSS的一种扩展技术，包含变量、混合、函数、运算�
   border-radius: 6px;
 }
 ```
+可以看到，这里就用到了函数的概念，在 #header 和 .button 中分别传入不同的参数，结果也就生成不同的代码。
 本节旨在教会大家如何使用less，less的语法与魅力请有兴趣的同学移步[Less中文网](http://lesscss.cn/)或者本人将在未来写一篇有关Less的详细文章，敬请期待。
 
 ## 二、TypeScript
