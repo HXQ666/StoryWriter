@@ -114,11 +114,6 @@ Less是基于CSS的一种扩展技术，包含变量、混合、函数、运算�
   -moz-border-radius: 6px;
   border-radius: 6px;
 }
-
-作者：dkvirus
-链接：https://www.jianshu.com/p/48018e5da7dd
-來源：简书
-简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。
 ```
 本节旨在教会大家如何使用less，less的语法与魅力请有兴趣的同学移步[Less中文网](http://lesscss.cn/)或者本人将在未来写一篇有关Less的详细文章，敬请期待。
 
