@@ -1,5 +1,7 @@
 > 前言：讲起前端，我们就不能不讲CSS与Javascript，在这两种技术广泛应用在web应用的今天，他们的扩展也是层出不穷，css的扩展有Less、Sass、Stylus 等，js的超集有Typescript等。今天我们就简单来聊聊Less与Typescript以及webpage技术。本文为简单普及性知识，旨在让大家学会怎么去用这三项技术，以及这三项技术在开发的过程中给我们带来的便利性与好处。
-> 本文借鉴了HANS许的[Less与TypeScript的简单理解与应用，并使用WebPack打包静态页面](https://www.cnblogs.com/xuhuale/p/10229627.html)以及dkvirus的[三十分钟学会 Less](https://www.jianshu.com/p/48018e5da7dd)。
+> 本文借鉴了以下同学的文章，特此感谢。
+> HANS许的[Less与TypeScript的简单理解与应用，并使用WebPack打包静态页面](https://www.cnblogs.com/xuhuale/p/10229627.html)
+> dkvirus的[三十分钟学会 Less](https://www.jianshu.com/p/48018e5da7dd)。
 ## 一、Less
 #### 1、什么是Less？
 Less是基于CSS的一种扩展技术，包含变量、混合、函数、运算，可以简化CSS代码，降低维护成本。必须通过解析器将less文件转换为css文件供页面使用。Less让 CSS 更易维护、方便制作主题、扩充。Less 可以运行在 Node 或浏览器端。[Less中文网](http://lesscss.cn/)。
