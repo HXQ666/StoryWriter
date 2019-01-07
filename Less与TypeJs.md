@@ -246,4 +246,9 @@ npm install -g webpack-cli
 从警告信息中我们就可以知道，我们没有设定mode，webpack分为开发模式和生产模式。我们看下这两种模式的编译
 ![
 ](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546870319896.png)
-![enter description here](https://markdown.xiaoshujiang.com/img/spinner.gif "[[[1546870366886]]]" )
+![enter description here](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546870366886.png)
+从图中我们也能看出来production编译出来的明显比较小。
+上面这种方法是全局去告诉webpack要编译哪个文件，那我们也可以用另外一种方法：
+我们先用 npm init -y 初始化项目，新建一个package.json文件。
+![enter description here](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546872088375.png)
+这里面包含了项目的很多信息，记录项目的描述信息：项目作者、项目描述、项目依赖哪些包、插件配置信息等等
