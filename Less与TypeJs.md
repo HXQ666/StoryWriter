@@ -183,5 +183,24 @@ flag=1;
 var flag:boolean=true;
 flag=1;//直接报错。
 ```
-<2>、
+<2>、类
+```
+//ts语法
+class person{
+    name:string;
+    constructor(name:string){
+        this.name=name
+    }
+    getname():string{
+        return this.name;
+    };
+    setname(name:string):void{
+        this.name=name;
+    }
+}
+var p= new person('张三');
+alert( p.getname());
+p.setname('李四');
+alert(p.getname())
+```
 ## 三、webpack
