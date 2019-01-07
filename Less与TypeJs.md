@@ -171,5 +171,12 @@ null和undefined
 void类型(新)
 never类型(新)
 ```
+Typescript为了使代码更加规范与更容易维护，新增了数据类型校验：
+```
+//js代码
+var flag=true;
+flag=1;
+
+```
 
 ## 三、webpack
