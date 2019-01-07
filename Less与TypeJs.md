@@ -220,6 +220,5 @@ var p = new person('张三');
 alert(p.getname());
 p.setname('李四');
 alert(p.getname());
-
 ```
 ## 三、webpack
