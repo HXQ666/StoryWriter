@@ -279,7 +279,7 @@ npm install -g webpack-cli
 其中scripts对象是指定了运行脚本命令的npm命令行缩写  
 我们将test改为build，用来简写webpack。
 
-![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546872410827.png)
+![enter description here](https://markdown.xiaoshujiang.com/img/spinner.gif "[[[1547044541743]]]" )
 
 我们再用--save -dev安装局部本地依赖，此时package.json就会有安装依赖包的信息：
 ![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1547043552619.png)  
