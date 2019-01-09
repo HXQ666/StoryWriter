@@ -149,9 +149,9 @@ TypeScript是一种由微软开发的自由和开源的编程语言。它是Java
 然后使用 tsc tsdemo.ts命令编译成tsdemo.js文件，演示如下：  
 ![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1547042531228.png)
 <3> 、配置配置文件   
-我们如果要将一个Typescript文件（.ts文件）编译成一个js文件，那么每次都要去运行tsc命令是不是很烦呢，那如果要编译整个项目呢？有没有那种我们边写ts边生成js的方法呢？答案肯定是有的。接下来我们去配置配置文件。   
-我们去运行tsc --init命令，在项目的根目录生成tsconfig.json的配置文件，
-![enter description here](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546783856530.png)
+我们如果要将一个Typescript文件（.ts文件）编译成一个js文件，那么每次都要去运行tsc命令是不是很烦呢，那如果要编译整个项目呢？有没有那种我们边写ts边生成js的方法呢？答案肯定是有的。接下来我们去配置配置文件。    
+我们去运行tsc --init命令，在项目的根目录生成tsconfig.json的配置文件
+![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546783856530.png)
 如果一个目录下存在一个tsconfig.json文件，那么它意味着这个目录是TypeScript项目的根目录。 tsconfig.json文件中指定了用来编译这个项目的根文件和编译选项。 一个项目可以通过以下方式之一来编译：  
 - 不带任何输入文件的情况下调用tsc，编译器会从当前目录开始去查找tsconfig.json文件，逐级向上搜索父目录。  
 - 不带任何输入文件的情况下调用tsc，且使用命令行参数--project（或-p）指定一个包含tsconfig.json文件的目录。  
