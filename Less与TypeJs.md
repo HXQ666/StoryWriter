@@ -36,7 +36,8 @@ Less是基于CSS的一种扩展技术，包含变量、混合、函数、运算�
 
 ![enter description here](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546779602154.png)
 
-此种方式缺点：耗性能，优点：简单开发时候无需一直预编译；
+此种方式缺点：耗性能，优点：简单开发时候无需一直预编译；  
+
 <2>、服务端用法
 我们可以用nodejs将less文件编译成css，再引用css文件。
 上节课我们已经讲过了npm与nodejs的用法，接下来我们就演示一遍全局安装less：
