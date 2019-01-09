@@ -276,4 +276,4 @@ npm install -g webpack-cli
 ![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546872410827.png)
 
 我们再用--save -dev安装局部本地依赖，此时package.json就会有安装依赖包的信息：
-![](https://markdown.xiaoshujiang.com/img/spinner.gif "[[[1546872677399]]]" )
+![](https://markdown.xiaoshujiang.com/img/spinner.gif "[[[1546872677399]]]")
