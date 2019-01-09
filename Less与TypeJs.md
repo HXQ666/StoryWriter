@@ -137,12 +137,13 @@ TypeScript是一种由微软开发的自由和开源的编程语言。它是Java
 
 #### 3、如何使用Typescript
 <1>、安装Typescript
-Visual Studio 2017和Visual Studio 2015 Update 3默认包含了TypeScript。 如果你的Visual Studio还没有安装TypeScript，你可以下载它。
+浏览器不能直接识别Typescript文件，必须由编译器编译成JS才可以，Visual Studio 2017和Visual Studio 2015 Update 3默认包含了TypeScript。 如果你的Visual Studio还没有安装TypeScript，你可以下载它。
 既然我们讲到了npm，我们也可以用npm去安装Typescript。
 ![enter description here](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546782080526.png)
 如图，我们也可以去看Typescript的编译器的版本。  
 
-<2> 、配置配置文件
+<2>、
+<3> 、配置配置文件
 我们如果要将一个Typescript文件（.ts文件）编译成一个js文件，那么每次都要去运行tsc命令是不是很烦呢，那如果要编译整个项目呢？有没有那种我们边写ts边生成js的方法呢？答案肯定是有的。接下来我们去配置配置文件。   
 我们去运行tsc --init命令，在项目的根目录生成tsconfig.json的配置文件，
 ![enter description here](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546783856530.png)
