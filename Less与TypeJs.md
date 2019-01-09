@@ -130,9 +130,11 @@ Less是基于CSS的一种扩展技术，包含变量、混合、函数、运算�
 #### 1、什么是Typescript？
 TypeScript是一种由微软开发的自由和开源的编程语言。它是JavaScript的一个超集，而且本质上向这个语言添加了可选的静态类型和基于类的面向对象编程。截止目前，Typescript已经发布了最新的3.1版本。[Typescript中文网](https://www.tslang.cn);下图为Typescript与ES6、ES5的关系。Typescript包含了ES6与ES5,简而言之，我们可以在Typescript写ES6与ES5的语法。
 ![enter description here](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546783020963.png)
+
 #### 2、为什么要去用Typescript？
 <1>、TypeScript的设计目的应该是解决JavaScript的“痛点”：弱类型和没有命名空间，导致很难模块化，不适合开发大型程序。另外它还提供了一些语法糖来帮助大家更方便地实践面向对象的编程。  
-<2>、Typescript越来越在前端流行与广泛使用，在最新的TIOBE的编程语言排行榜中，成为最大的黑马，从第167名上升至49名，所以对于想要做好web的我们，了解并熟练掌握Typescript变得极为重要。
+<2>、Typescript越来越在前端流行与广泛使用，在最新的TIOBE的编程语言排行榜中，成为最大的黑马，从第167名上升至49名，所以对于想要做好web的我们，了解并熟练掌握Typescript变得极为重要。  
+
 #### 3、如何使用Typescript
 <1>、安装Typescript
 Visual Studio 2017和Visual Studio 2015 Update 3默认包含了TypeScript。 如果你的Visual Studio还没有安装TypeScript，你可以下载它。
