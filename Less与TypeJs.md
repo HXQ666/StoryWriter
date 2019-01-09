@@ -29,7 +29,7 @@ Less是基于CSS的一种扩展技术，包含变量、混合、函数、运算�
 我们先来讲一下浏览器用法：  
 首先我们要先写好页面所需要的less文件，然后引入less.js即可。如下：
 ![enter description here](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546779305779.png)  
-> Tips：注意你的less样式文件一定要在引入less.js前先引入。
+> Tips：注意你的less样式文件一定要在引入less.js前先引入。   
 >  请在服务器环境下使用！本地直接打开可能会报错！
 
 
