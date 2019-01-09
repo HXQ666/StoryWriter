@@ -26,7 +26,7 @@ Less是基于CSS的一种扩展技术，包含变量、混合、函数、运算�
 上面就是Less的语法-变量的一种形式，如果我们此时要去改变border的大小我们只要改变borderSize的值即可。
 #### 3、怎么去用Less
 <1>、浏览器用法     
-我们先来讲一下浏览器用法：
+我们先来讲一下浏览器用法：  
 首先我们要先写好页面所需要的less文件，然后引入less.js即可。如下：
 ![enter description here](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546779305779.png)  
 > 注意你的less样式文件一定要在引入less.js前先引入。
