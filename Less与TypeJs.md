@@ -277,9 +277,9 @@ npm install -g webpack-cli
 
 这里面包含了项目的很多信息，记录项目的描述信息：项目作者、项目描述、项目依赖哪些包、插件配置信息等等。  
 其中scripts对象是指定了运行脚本命令的npm命令行缩写  
-我们将test改为build，用来简写webpack。
+我们将test改为build，用来简写webpack。并将入口文件改为hellowebpack.js,注意此文件应放在src文件夹下，当webpack打包时会默认去此文件夹下找。
 
-![enter description here](https://markdown.xiaoshujiang.com/img/spinner.gif "[[[1547044541743]]]" )
+![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1547047226727.png)
 
 我们再用--save -dev安装局部本地依赖，此时package.json就会有安装依赖包的信息：
 ![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1547043552619.png)  
