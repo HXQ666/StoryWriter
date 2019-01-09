@@ -237,7 +237,7 @@ alert(p.getname());
 p.setname('李四');
 alert(p.getname());
 ```
-我们可以看到,其实Ts的类跟我们后端语言C#之类的非常相像。
+我们可以看到,其实Ts的类跟我们后端语言C#之类的非常相像。TS的简要语法就先介绍到这里，有兴趣的同学可以移步[Typescript的中文官网](https://www.tslang.cn/)或者本来在未来将会写一篇有关typescript的详细文章，敬请期待。
 ## 三、webpack
 #### 1、什么是webpack？
 在当今的社会，作为 web 开发，会越来越意识到前端的重要性，随着 HTML5、 CSS3、 ES6 各种技术的发展，前端的开发越来越庞大。甚至有些应用就是单页面应用(SPA)，纯 JavaScript 开发，JavaScript 文件的管理也是一个问题。JavaScript 模块化编程，已经成为一个迫切的需求，这就出现了 JavaScript 的模块解决方案。webpack是一个前端模块化方案，更侧重模块打包，我们可以把开发中的所有资源（图片、js 文件、css 文件等）都看成模块，通过 loader（加载器）和 plugins（插件）对资源进行处理，打包成符合生产环境部署的前端资源。
