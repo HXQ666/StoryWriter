@@ -41,7 +41,8 @@ Less是基于CSS的一种扩展技术，包含变量、混合、函数、运算�
 <2>、服务端用法
 我们可以用nodejs将less文件编译成css，再引用css文件。
 上节课我们已经讲过了npm与nodejs的用法，接下来我们就演示一遍全局安装less：  
- 命令为 npm install -g less
+ > 命令为 npm install -g less  
+ >
 ![enter description here](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546779910071.png)
 这样我们就安装了less，我们也可以看less的编译器lessc的版本，那我们如何将一个less文件编译成一个css文件呢？
 ![enter description here](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546780584316.png)
