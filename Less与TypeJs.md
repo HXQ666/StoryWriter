@@ -1,5 +1,5 @@
 > 前言：讲起前端，我们就不能不讲CSS与Javascript，在这两种技术广泛应用的今天，他们的扩展也是层出不穷，css的扩展有Less、Sass、Stylus 等，js的超集有Typescript等。今天我们就简单来聊聊Less与Typescript以及静态模块打包器webpack。  
-> 本节目标：本文为简单普及性知识，旨在让大家学会怎么去用这三项技术，以及这三项技术在开发的过程中给我们带来的便利性与好处。
+> 本节目标：本文为简单普及性知识，旨在让大家了解并初步学会怎么去用这三项技术，以及这三项技术在开发的过程中给我们带来的便利性与好处，挑起大家对这三项技术的兴趣，方便同学们课后去学习。
 > 本文借鉴了以下同学的文章，特此感谢。
 > - HANS许的[Less与TypeScript的简单理解与应用，并使用WebPack打包静态页面](https://www.cnblogs.com/xuhuale/p/10229627.html)
 > - dkvirus的[三十分钟学会 Less](https://www.jianshu.com/p/48018e5da7dd)。
