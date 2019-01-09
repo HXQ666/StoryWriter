@@ -145,7 +145,7 @@ TypeScript是一种由微软开发的自由和开源的编程语言。它是Java
 <2>、最简单的编译操作  
 接下来我们来演示一下最简单的编译一个ts文件的操作。  
 首先我们新建一个ts文件  
-![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1547042374061.png)  
+![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1547042374061.png)    
 然后使用 tsc tsdemo.ts命令编译成tsdemo.js文件，演示如下：  
 ![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1547042531228.png)  
 
