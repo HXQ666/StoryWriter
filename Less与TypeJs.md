@@ -24,31 +24,8 @@ Less是基于CSS的一种扩展技术，包含变量、混合、函数、运算�
 	-moz-border-radius:@borderSize;
 }
 ```
-上面就是Less的语法-变量的一种形式，如果我们此时要去改变border的大小我们只要改变borderSize的值即可。
-#### 3、怎么去用Less
-<1>、浏览器用法     
-我们先来讲一下浏览器用法：  
-首先我们要先写好页面所需要的less文件，然后引入less.js即可。如下：
-![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546779305779.png)  
-> Tips：注意你的less样式文件一定要在引入less.js前先引入。   
->  请在服务器环境下使用！本地直接打开可能会报错！
+上面就是Less的语法-变量的一种形式，如果我们此时要去改变border的大小我们只要改变borderSize的值即可。  
 
-当浏览器加载后less.js后文件，会去解析rel为stylesheet/less文件，并将转译后的内容生成style元素内嵌在HTML的head节点中，如下图：  
-
-![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546779602154.png)
-
-此种方式缺点：耗性能，优点：简单开发时候无需一直预编译；  
-
-<2>、服务端用法
-我们可以用nodejs将less文件编译成css，再引用css文件。
-上节课我们已经讲过了npm与nodejs的用法，接下来我们就演示一遍全局安装less：  
- > 命令为 npm install -g less  
- 
-![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546779910071.png)
-这样我们就安装了less，我们也可以看less的编译器lessc的版本，那我们如何将一个less文件编译成一个css文件呢？
-![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546780584316.png)
-利用less编译器即可将指定的less文件编译成css到指定的目录底下。  
-缺点：使用麻烦 优点：提高站点性能；  
 #### 4、Less语法
 我们在这里简单的说几点less的语法使用。    
 <1>、变量
@@ -125,6 +102,32 @@ Less是基于CSS的一种扩展技术，包含变量、混合、函数、运算�
 }
 ```
 可以看到，这里就用到了函数的概念，在 #header 和 .button 中分别传入不同的参数，结果也就生成不同的代码。
+
+#### 3、怎么去用Less
+<1>、浏览器用法     
+我们先来讲一下浏览器用法：  
+首先我们要先写好页面所需要的less文件，然后引入less.js即可。如下：
+![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546779305779.png)  
+> Tips：注意你的less样式文件一定要在引入less.js前先引入。   
+>  请在服务器环境下使用！本地直接打开可能会报错！
+
+当浏览器加载后less.js后文件，会去解析rel为stylesheet/less文件，并将转译后的内容生成style元素内嵌在HTML的head节点中，如下图：  
+
+![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546779602154.png)
+
+此种方式缺点：耗性能，优点：简单开发时候无需一直预编译；  
+
+<2>、服务端用法
+我们可以用nodejs将less文件编译成css，再引用css文件。
+上节课我们已经讲过了npm与nodejs的用法，接下来我们就演示一遍全局安装less：  
+ > 命令为 npm install -g less  
+ 
+![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546779910071.png)
+这样我们就安装了less，我们也可以看less的编译器lessc的版本，那我们如何将一个less文件编译成一个css文件呢？
+![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546780584316.png)
+利用less编译器即可将指定的less文件编译成css到指定的目录底下。  
+缺点：使用麻烦 优点：提高站点性能；  
+
 本节旨在教会大家如何使用less以及less的基本语法，这里还有许多好用的语法没有讲到，比如内置函数、运算、神奇的import等等。less的语法与魅力请有兴趣的同学移步[Less中文网](http://lesscss.cn/)或者本人将在未来写一篇有关Less的详细文章，敬请期待。
 
 ## 二、TypeScript
