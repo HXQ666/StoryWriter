@@ -139,43 +139,6 @@ TypeScript是一种由微软开发的自由和开源的编程语言。它是Java
 <1>、TypeScript的设计目的应该是解决JavaScript的“痛点”：弱类型和没有命名空间，导致很难模块化，不适合开发大型程序。另外它还提供了一些语法糖来帮助大家更方便地实践面向对象的编程。  
 <2>、Typescript越来越在前端流行与广泛使用，在最新的TIOBE的编程语言排行榜中，成为最大的黑马，从第167名上升至49名，所以对于想要做好web的我们，了解并熟练掌握Typescript变得极为重要。  
 
-#### 3、如何使用Typescript
-<1>、安装Typescript
-浏览器不能直接识别Typescript文件，必须由编译器编译成JS才可以，Visual Studio 2017和Visual Studio 2015 Update 3默认包含了TypeScript。 如果你的Visual Studio还没有安装TypeScript，你可以下载它。
-既然我们讲到了npm，我们也可以用npm去安装Typescript。
-![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546782080526.png)
-如图，我们也可以去看Typescript的编译器的版本。  
-
-<2>、最简单的编译操作  
-接下来我们来演示一下最简单的编译一个ts文件的操作。  
-首先我们新建一个ts文件  
-![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1547042374061.png)    
-然后使用 tsc tsdemo.ts命令编译成tsdemo.js文件，演示如下：  
-![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1547042531228.png)  
-
-<3> 、配置配置文件   
-我们如果要将一个Typescript文件（.ts文件）编译成一个js文件，那么每次都要去运行tsc命令是不是很烦呢，那如果要编译整个项目呢？有没有那种我们边写ts边生成js的方法呢？答案肯定是有的。接下来我们去配置配置文件。    
-我们去运行tsc --init命令，在项目的根目录生成tsconfig.json的配置文件
-![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546783856530.png)
-如果一个目录下存在一个tsconfig.json文件，那么它意味着这个目录是TypeScript项目的根目录。 tsconfig.json文件中指定了用来编译这个项目的根文件和编译选项。 一个项目可以通过以下方式之一来编译：  
-- 不带任何输入文件的情况下调用tsc，编译器会从当前目录开始去查找tsconfig.json文件，逐级向上搜索父目录。  
-- 不带任何输入文件的情况下调用tsc，且使用命令行参数--project（或-p）指定一个包含tsconfig.json文件的目录。  
-- 当命令行上指定了输入文件时，tsconfig.json文件会被忽略。    
-
-接下来我们根据tsconfig.json文件与vscode来配置一个在编写ts文件时按保存可以时时编译成js文件的方法：
-首先，我们先在项目的根目录建一个ts文件：  
-![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546820712430.png)  
-然后，我们去tsconfig.json配置要生成的js目录：  
-![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546821074744.png)  
-接下来点击vs上方菜单的终端，点击运行任务，选择tsc-监视：  
-![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546820802687.png)  
-此时终端会显示成这样，证明监视成功：  
-![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546820860038.png)  
-我们在ts文件中写ts代码，按ctrl+s保存时，会自动在我们设置好的目录下生成js文件：    
-![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546820992268.png)
-
-配置项的具体含义请移步官网的[Typescript配置项说明](https://www.tslang.cn/docs/handbook/tsconfig-json.html)
-
 #### 4、Typescript常用语法概要
 我们接下来稍微介绍一下Typescript的常用语法：  
 <1>、数据类型
@@ -241,7 +204,46 @@ alert(p.getname());
 p.setname('李四');
 alert(p.getname());
 ```
-我们可以看到,其实Ts的类跟我们后端语言C#之类的非常相像。TS的简要语法就先介绍到这里，有兴趣的同学可以移步[Typescript的中文官网](https://www.tslang.cn/)或者本来在未来将会写一篇有关typescript的详细文章，敬请期待。  
+我们可以看到,其实Ts的类跟我们后端语言C#之类的非常相像。
+
+#### 3、如何使用Typescript
+<1>、安装Typescript
+浏览器不能直接识别Typescript文件，必须由编译器编译成JS才可以，Visual Studio 2017和Visual Studio 2015 Update 3默认包含了TypeScript。 如果你的Visual Studio还没有安装TypeScript，你可以下载它。
+既然我们讲到了npm，我们也可以用npm去安装Typescript。
+![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546782080526.png)
+如图，我们也可以去看Typescript的编译器的版本。  
+
+<2>、最简单的编译操作  
+接下来我们来演示一下最简单的编译一个ts文件的操作。  
+首先我们新建一个ts文件  
+![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1547042374061.png)    
+然后使用 tsc tsdemo.ts命令编译成tsdemo.js文件，演示如下：  
+![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1547042531228.png)  
+
+<3> 、配置配置文件   
+我们如果要将一个Typescript文件（.ts文件）编译成一个js文件，那么每次都要去运行tsc命令是不是很烦呢，那如果要编译整个项目呢？有没有那种我们边写ts边生成js的方法呢？答案肯定是有的。接下来我们去配置配置文件。    
+我们去运行tsc --init命令，在项目的根目录生成tsconfig.json的配置文件
+![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546783856530.png)
+如果一个目录下存在一个tsconfig.json文件，那么它意味着这个目录是TypeScript项目的根目录。 tsconfig.json文件中指定了用来编译这个项目的根文件和编译选项。 一个项目可以通过以下方式之一来编译：  
+- 不带任何输入文件的情况下调用tsc，编译器会从当前目录开始去查找tsconfig.json文件，逐级向上搜索父目录。  
+- 不带任何输入文件的情况下调用tsc，且使用命令行参数--project（或-p）指定一个包含tsconfig.json文件的目录。  
+- 当命令行上指定了输入文件时，tsconfig.json文件会被忽略。    
+
+接下来我们根据tsconfig.json文件与vscode来配置一个在编写ts文件时按保存可以时时编译成js文件的方法：
+首先，我们先在项目的根目录建一个ts文件：  
+![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546820712430.png)  
+然后，我们去tsconfig.json配置要生成的js目录：  
+![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546821074744.png)  
+接下来点击vs上方菜单的终端，点击运行任务，选择tsc-监视：  
+![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546820802687.png)  
+此时终端会显示成这样，证明监视成功：  
+![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546820860038.png)  
+我们在ts文件中写ts代码，按ctrl+s保存时，会自动在我们设置好的目录下生成js文件：    
+![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546820992268.png)
+
+配置项的具体含义请移步官网的[Typescript配置项说明](https://www.tslang.cn/docs/handbook/tsconfig-json.html)
+
+TS的简要语法就先介绍到这里，有兴趣的同学可以移步[Typescript的中文官网](https://www.tslang.cn/)或者本来在未来将会写一篇有关typescript的详细文章，敬请期待。  
 ## 三、webpack
 #### 1、什么是webpack？
 在当今的社会，作为 web 开发，会越来越意识到前端的重要性，随着 HTML5、 CSS3、 ES6 各种技术的发展，前端的开发越来越庞大。甚至有些应用就是单页面应用(SPA)，纯 JavaScript 开发，JavaScript 文件的管理也是一个问题。JavaScript 模块化编程，已经成为一个迫切的需求，这就出现了 JavaScript 的模块解决方案。webpack是一个前端模块化方案，更侧重模块打包，我们可以把开发中的所有资源（图片、js 文件、css 文件等）都看成模块，通过 loader（加载器）和 plugins（插件）对资源进行处理，打包成符合生产环境部署的前端资源。
