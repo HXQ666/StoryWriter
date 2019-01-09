@@ -173,7 +173,7 @@ TypeScript是一种由微软开发的自由和开源的编程语言。它是Java
 配置项的具体含义请移步官网的[Typescript配置项说明](https://www.tslang.cn/docs/handbook/tsconfig-json.html)
 
 #### 4、Typescript常用语法概要
-我们接下来稍微介绍一下Typescript的常用语法：
+我们接下来稍微介绍一下Typescript的常用语法：  
 <1>、数据类型
 ```
 布尔类型:boolean
