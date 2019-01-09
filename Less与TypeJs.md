@@ -158,15 +158,15 @@ TypeScript是一种由微软开发的自由和开源的编程语言。它是Java
 - 当命令行上指定了输入文件时，tsconfig.json文件会被忽略。    
 
 接下来我们根据tsconfig.json文件与vscode来配置一个在编写ts文件时按保存可以时时编译成js文件的方法：
-首先，我们先在项目的根目录建一个ts文件：
+首先，我们先在项目的根目录建一个ts文件：  
 ![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546820712430.png)
-然后，我们去tsconfig.json配置要生成的js目录：
+然后，我们去tsconfig.json配置要生成的js目录：  
 ![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546821074744.png)
-接下来点击vs上方菜单的终端，点击运行任务，选择tsc-监视：
+接下来点击vs上方菜单的终端，点击运行任务，选择tsc-监视：  
 ![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546820802687.png)
-此时终端会显示成这样，证明监视成功：
+此时终端会显示成这样，证明监视成功：  
 ![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546820860038.png)
-我们在ts文件中写ts代码，按ctrl+s保存时，会自动在我们设置好的目录下生成js文件：
+我们在ts文件中写ts代码，按ctrl+s保存时，会自动在我们设置好的目录下生成js文件：  
 ![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546820992268.png)
 
 配置项的具体含义请移步官网的[Typescript配置项说明](https://www.tslang.cn/docs/handbook/tsconfig-json.html)
