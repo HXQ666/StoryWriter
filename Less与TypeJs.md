@@ -285,4 +285,4 @@ npm install -g webpack-cli
 ![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1547047342757.png)
 
 此时我们去执行 npm run build命令，就能编译到dist文件夹下的main.js.   
-![enter description here](https://markdown.xiaoshujiang.com/img/spinner.gif "[[[1547047540116]]]" )
+![](https://markdown.xiaoshujiang.com/img/spinner.gif "[[[1547047540116]]]" )
