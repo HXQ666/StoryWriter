@@ -252,24 +252,23 @@ npm install -g webpack
 npm install -g webpack-cli
 ```
 安装完毕后我们查看版本如下图：
-![enter description here](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546868064591.png)
+![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546868064591.png)
 
 <2> 、简单上手webpack
 接下来我们来做一个最简单的webpack的打包编译。
 我首先在vscode新建一个文件夹webpackDemo,新建一个hellowebpack.js的文件，写几句js代码
-接下来我们在这个目录下运行命令：
-![enter description here](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546869950896.png)
+接下来我们在这个目录下运行命令：  
+![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546869950896.png)  
 从警告信息中我们就可以知道，我们没有设定mode，webpack分为开发模式和生产模式。我们看下这两种模式的编译
-![
-](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546870319896.png)
-![enter description here](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546870366886.png)
-从图中我们也能看出来production编译出来的明显比较小。
-上面这种方法是全局去告诉webpack要编译哪个文件，那我们也可以用另外一种方法：
-我们先用 npm init -y 初始化项目，新建一个package.json文件。
-![enter description here](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546872088375.png)
-这里面包含了项目的很多信息，记录项目的描述信息：项目作者、项目描述、项目依赖哪些包、插件配置信息等等。
-其中scripts对象是指定了运行脚本命令的npm命令行缩写
+![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546870319896.png)  
+![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546870366886.png)  
+从图中我们也能看出来production编译出来的明显比较小。  
+上面这种方法是全局去告诉webpack要编译哪个文件，那我们也可以用另外一种方法：  
+我们先用 npm init -y 初始化项目，新建一个package.json文件。  
+![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546872088375.png)   
+这里面包含了项目的很多信息，记录项目的描述信息：项目作者、项目描述、项目依赖哪些包、插件配置信息等等。  
+其中scripts对象是指定了运行脚本命令的npm命令行缩写  
 我们将test改为build，用来简写webpack。
-![enter description here](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546872410827.png)
+![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546872410827.png)
 我们再用--save -dev安装局部本地依赖，此时package.json就会有安装依赖包的信息：
-![enter description here](https://markdown.xiaoshujiang.com/img/spinner.gif "[[[1546872677399]]]" )
+![](https://markdown.xiaoshujiang.com/img/spinner.gif "[[[1546872677399]]]" )
