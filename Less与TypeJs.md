@@ -1,4 +1,5 @@
-> 前言：讲起前端，我们就不能不讲CSS与Javascript，在这两种技术广泛应用的今天，他们的扩展也是层出不穷，css的扩展有Less、Sass、Stylus 等，js的超集有Typescript等。今天我们就简单来聊聊Less与Typescript以及静态模块打包器webpack。本文为简单普及性知识，旨在让大家学会怎么去用这三项技术，以及这三项技术在开发的过程中给我们带来的便利性与好处。
+> 前言：讲起前端，我们就不能不讲CSS与Javascript，在这两种技术广泛应用的今天，他们的扩展也是层出不穷，css的扩展有Less、Sass、Stylus 等，js的超集有Typescript等。今天我们就简单来聊聊Less与Typescript以及静态模块打包器webpack。  
+> 本节目标：本文为简单普及性知识，旨在让大家学会怎么去用这三项技术，以及这三项技术在开发的过程中给我们带来的便利性与好处。
 > 本文借鉴了以下同学的文章，特此感谢。
 > - HANS许的[Less与TypeScript的简单理解与应用，并使用WebPack打包静态页面](https://www.cnblogs.com/xuhuale/p/10229627.html)
 > - dkvirus的[三十分钟学会 Less](https://www.jianshu.com/p/48018e5da7dd)。
@@ -276,4 +277,4 @@ npm install -g webpack-cli
 ![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546872410827.png)
 
 我们再用--save -dev安装局部本地依赖，此时package.json就会有安装依赖包的信息：
-![](https://markdown.xiaoshujiang.com/img/spinner.gif "[[[1546872677399]]]")
+![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1547043552619.png)  
