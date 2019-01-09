@@ -206,7 +206,7 @@ alert(p.getname());
 ```
 我们可以看到,其实Ts的类跟我们后端语言C#之类的非常相像。
 
-#### 3、如何使用Typescript
+#### 4、如何使用Typescript
 <1>、安装Typescript
 浏览器不能直接识别Typescript文件，必须由编译器编译成JS才可以，Visual Studio 2017和Visual Studio 2015 Update 3默认包含了TypeScript。 如果你的Visual Studio还没有安装TypeScript，你可以下载它。
 既然我们讲到了npm，我们也可以用npm去安装Typescript。
