@@ -23,7 +23,7 @@ Less是基于CSS的一种扩展技术，包含变量、混合、函数、运算�
 	-moz-border-radius:@borderSize;
 }
 ```
-如果我们此时要去改变border的大小我们只要改变borderSize的值即可。
+上面就是Less的语法-变量的一种形式，如果我们此时要去改变border的大小我们只要改变borderSize的值即可。
 #### 3、怎么去用Less
 <1>、浏览器用法
 首先我们要先写好页面所需要的less文件，然后引入less.js即可。如下：
