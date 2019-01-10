@@ -302,4 +302,4 @@ npm install -g webpack-cli
 ![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1547131253662.png)  
 
 我们局部安装此插件：  
-![enter description here](https://markdown.xiaoshujiang.com/img/spinner.gif "[[[1547132378154]]]" )
+![](https://markdown.xiaoshujiang.com/img/spinner.gif "[[[1547132378154]]]" )
