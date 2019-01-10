@@ -292,3 +292,6 @@ npm install -g webpack-cli
 首先，我们先用npm init -y命令初始化项目。  
 ![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1547130489110.png)
 
+然后再局部引入webpack与webpack-cli  
+![enter description here](https://markdown.xiaoshujiang.com/img/spinner.gif "[[[1547130726254]]]" )
+
