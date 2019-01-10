@@ -250,7 +250,7 @@ TS的使用方法及简要语法就先介绍到这里，有兴趣的同学可以
 总的来说就是如下图：  
 ![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546868168518.png)
 #### 2、如何使用webpack
-<1> 、安装webpack
+<1> 、安装webpack  
 安装webpack首先必须要有nodejs的环境，我们用npm工具去安装webpack，命令为：
 ```
 npm install -g webpack
@@ -260,7 +260,7 @@ npm install -g webpack-cli
 安装完毕后我们查看版本如下图：
 ![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1546868064591.png)
 
-<2> 、简单上手webpack
+<2> 、简单上手webpack    
 接下来我们来做一个最简单的webpack的打包编译。
 我首先在vscode新建一个文件夹webpackDemo,新建一个hellowebpack.js的文件，写几句js代码
 接下来我们在这个目录下运行命令：  
