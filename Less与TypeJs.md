@@ -290,5 +290,5 @@ npm install -g webpack-cli
 学会了这个简单的webpack打包，我们能不能让webpack自动帮我们创建html并将js引入进去呢？  
 接下来我们来进行一下尝试。 
 首先，我们先用npm init -y命令初始化项目。  
-![](https://markdown.xiaoshujiang.com/img/spinner.gif "[[[1547130489110]]]" )
+![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1547130489110.png)
 
