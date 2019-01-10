@@ -306,4 +306,5 @@ npm install -g webpack-cli
 并去webpack.config.js配置好此插件：  
 ![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1547132431818.png)  
 这里的HtmlWebpackPlugin()有一堆的参数，我们这里篇幅有限，只做简要的介绍，具体的更多功能请移步官网查看详解。  
-
+此时我们再使用webpack --mode production 命令编译项目，webpack就会帮我们创建好html，并引入进去了。   
+![enter description here](https://markdown.xiaoshujiang.com/img/spinner.gif "[[[1547132685265]]]" )
