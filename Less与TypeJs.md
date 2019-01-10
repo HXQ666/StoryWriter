@@ -304,4 +304,6 @@ npm install -g webpack-cli
 我们局部安装此插件：  
 ![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1547132378154.png)  
 并去webpack.config.js配置好此插件：  
-![](https://markdown.xiaoshujiang.com/img/spinner.gif "[[[1547132431818]]]" )
+![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1547132431818.png)  
+这里的HtmlWebpackPlugin()有一堆的参数，我们这里篇幅有限，只做简要的介绍，具体的更多功能请移步官网查看详解。  
+
