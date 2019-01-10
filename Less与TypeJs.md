@@ -296,5 +296,7 @@ npm install -g webpack-cli
 ![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1547130726254.png)  
 
 之后我们在根目录创建一个webpack.config.js的配置文件，写入入口文件：  
-![](https://markdown.xiaoshujiang.com/img/spinner.gif "[[[1547131029220]]]" )
+![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1547131029220.png)  
 
+那现在我们要让webpack帮我们创建html文件且引入js文件，就需要用到webpack的一个插件 【HtmlWebpackPlugin】，我们可以去官网查看此插件的用法
+![enter description here](https://markdown.xiaoshujiang.com/img/spinner.gif "[[[1547131253662]]]" )
