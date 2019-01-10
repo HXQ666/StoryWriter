@@ -293,5 +293,8 @@ npm install -g webpack-cli
 ![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1547130489110.png)
 
 然后再局部引入webpack与webpack-cli  
-![enter description here](https://markdown.xiaoshujiang.com/img/spinner.gif "[[[1547130726254]]]" )
+![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1547130726254.png)  
+
+之后我们在根目录创建一个webpack.config.js的配置文件，写入入口文件：  
+![](https://markdown.xiaoshujiang.com/img/spinner.gif "[[[1547131029220]]]" )
 
