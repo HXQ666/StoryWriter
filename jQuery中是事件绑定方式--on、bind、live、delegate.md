@@ -16,4 +16,6 @@ $(selector).one(event,data,function)
 $("p").one("click", function(){
   alert( $(this).text() );
 });
+//例子表明了p标签第一次被点击时弹出其文本。
 ```
+### 二、live
