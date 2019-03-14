@@ -12,3 +12,9 @@ $(selector).one(event,data,function)
 |  event   | 必需。规定添加到元素的一个或多个事件。由空格分隔多个事件。必须是有效的事件。    |
 |   data  |  可选。规定传递到函数的额外数据。   |
 |function|必需。规定当事件发生时运行的函数。|
+例子：
+```
+$("p").one("click", function(){
+  alert( $(this).text() );
+});
+```
