@@ -61,4 +61,4 @@ $("p").die("click", , function() {
 });
 ```
 此方法在1.7版本以上不推荐使用，可用off来代替。
-## 三、bind(v)
+## 三、bind(v3.0-)与unbind(v3.0-)
