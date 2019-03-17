@@ -33,5 +33,7 @@ $(selector).live(event,data,function)
 |  function   | 必需。规定当事件发生时运行的函数。    |
 例子：
 ```
-$("a").live("click", function() { return false; })
+$("a").live("click", function() { 
+	return false; 
+})
 ```
