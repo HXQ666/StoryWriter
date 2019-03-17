@@ -120,3 +120,4 @@ $("table").delegate("td", "hover", function(){
     $(this).toggleClass("hover");
 });
 ```
+undelegate() 方法删除由 delegate() 方法添加的一个或多个事件处理程序。
