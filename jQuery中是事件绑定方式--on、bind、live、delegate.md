@@ -103,3 +103,20 @@ $( "#foo" ).bind( "click", function() {
 
 ## 四、delegate(v3.0-)与undelegate(v3.0-)
 delegate方法指定的元素（属于被选元素的子元素）添加一个或多个事件处理程序，并规定当这些事件发生时运行的函数。适用于当前或未来的元素。
+语法
+```
+$(selector).delegate(childSelector,event,data,function)
+```
+
+| 参数          | 描述                                                                           |
+| ------------- | ------------------------------------------------------------------------------ |
+| childSelector | 必需。规定要附加事件处理程序的一个或多个子元素。                               |
+| event         | 必需。规定附加到元素的一个或多个事件。由空格分隔多个事件值。必须是有效的事件。 |
+| data          | 可选。规定传递到函数的额外数据。                                               |
+| function      | 必需。规定当事件发生时运行的函数。                                             |
+例子
+```
+$("table").delegate("td", "hover", function(){
+    $(this).toggleClass("hover");
+});
+```
