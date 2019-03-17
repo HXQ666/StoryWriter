@@ -172,4 +172,6 @@ $("body").off("click", "p", , function(){
 });
 ```
 #### 总结
-1.可为未来元素绑定事件的有：live(v1.7-)与die(v1.7-)、
+1.可为未来元素绑定事件的有：live方法、delegate方法、on方法，1.7版本之前推荐使用delegate方法。1.7版本以后推荐使用on方法。
+2.推荐尽量使用on方法与off方法。因为其他方法都是基于on方法的。我们看jQuery源码即可知道。（jquery源码v3.3.1）
+![enter description here](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1552805641064.png)
