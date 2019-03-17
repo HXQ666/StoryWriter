@@ -147,3 +147,9 @@ $(selector).on(event,childSelector,data,function)
 | childSelector | 可选。规定只能添加到指定的子元素上的事件处理程序（且不是选择器本身，比如已废弃的 delegate() 方法）。         |
 | data          | 可选。规定传递到函数的额外数据。                                                                             |
 | function      | 可选。规定当事件发生时运行的函数。 |
+例子
+```
+$("p").on("click", function(){
+alert( $(this).text() );
+});
+```
