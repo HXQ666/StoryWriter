@@ -54,5 +54,10 @@ $(selector).die(event,function)
 | function |可选。规定要移除的特定函数。|
 
 例子：
+```
+$("p").die("click", , function() { 
+	return false; 
+});
+```
 
 ## 三、die
