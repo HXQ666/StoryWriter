@@ -102,7 +102,7 @@ $( "#foo" ).bind( "click", function() {
 在3.0版本以上不推荐用，可用off方法替代
 
 ## 四、delegate(v3.0-)与undelegate(v3.0-)
-delegate方法指定的元素（属于被选元素的子元素）添加一个或多个事件处理程序，并规定当这些事件发生时运行的函数。适用于当前或未来的元素。
+###### delegate方法指定的元素（属于被选元素的子元素）添加一个或多个事件处理程序，并规定当这些事件发生时运行的函数。适用于当前或未来的元素。
 语法
 ```
 $(selector).delegate(childSelector,event,data,function)
