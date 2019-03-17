@@ -120,8 +120,16 @@ $("table").delegate("td", "hover", function(){
     $(this).toggleClass("hover");
 });
 ```
+在3.0版本以上不建议使用，请使用on方法代替
 undelegate() 方法删除由 delegate() 方法添加的一个或多个事件处理程序。
 语法
 ```
 $(selector).undelegate(selector,event,function)
 ```
+
+| 参数     | 描述                                             |
+| -------- | ------------------------------------------------ |
+| selector | 可选。规定需要删除事件处理程序的选择器。         |
+| event    | 可选。规定需要删除处理函数的一个或多个事件类型。 |
+| function |可选。规定要删除的具体事件处理函数。          |
+在3.0版本以上不建议使用，请使用off方法代替
