@@ -133,3 +133,10 @@ $(selector).undelegate(selector,event,function)
 | event    | 可选。规定需要删除处理函数的一个或多个事件类型。 |
 | function |可选。规定要删除的具体事件处理函数。          |
 在3.0版本以上不建议使用，请使用off方法代替
+
+## 五、on(v1.7+)与off(v1.7+)
+on() 方法在被选元素及子元素上添加一个或多个事件处理程序。适用于当前及未来的元素
+语法
+```
+$(selector).on(event,childSelector,data,function)
+```
