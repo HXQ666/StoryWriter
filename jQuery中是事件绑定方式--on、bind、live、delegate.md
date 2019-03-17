@@ -153,3 +153,7 @@ $("p").on("click", function(){
 alert( $(this).text() );
 });
 ```
+off() 方法通常用于移除通过 on() 方法添加的事件处理程序。
+```
+$(selector).off(event,selector,function(eventObj),map)
+```
