@@ -8,4 +8,5 @@
 
 ## 二.标准查询运算符
 1.Select
+例：![enter description here](https://markdown.xiaoshujiang.com/img/spinner.gif "[[[1553172693483]]]" )
 
