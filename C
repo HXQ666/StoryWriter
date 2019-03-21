@@ -3,4 +3,6 @@
 #### 1.什么是Linq？
 语言集成查询 (LINQ) 是 .NET Framework 3.5 版中引入的一项创新功能，它在对象领域和数据领域之间架起了一座桥梁。
 #### 2.哪些对象能使用Linq？
-在 C# 中可为以下对象编写 LINQ 查询：SQL Server 数据库、XML 文档、ADO.NET 数据集以及支持 IEnumerable 或泛型 IEnumerable<T> 接口的任何对象集合。
+在 C# 中可为以下对象编写 LINQ 查询：SQL Server 数据库、XML 文档、ADO.NET 数据集以及支持 IEnumerable 或泛型 IEnumerable<T> 接口的任何对象集合。但是使用的Linq项目的Framework 必须是3.5及以上的。
+
+#### 3.标准查询运算符
