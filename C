@@ -6,9 +6,11 @@
 #### 2.哪些对象能使用Linq？
 在 C# 中可为以下对象编写 LINQ 查询：SQL Server 数据库、XML 文档、ADO.NET 数据集以及支持 IEnumerable 或泛型 IEnumerable<T> 接口的任何对象集合。但是使用的Linq项目的Framework 必须是3.5及以上的。
 
-## 二.标准查询运算符
+## 二.常见标准查询运算符
 #### 1.Select
-此方法将将序列中的每个元素投影到新表单。
+此方法将序列中的每个元素投影到新表单。
 例：![select](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1553172693483.png)
+#### 2.where
+此方法基于谓词筛选值序列。
 
 
