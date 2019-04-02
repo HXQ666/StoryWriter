@@ -10,3 +10,6 @@ vue是一套构建用户界面的框架，只关注视图层，容易上手，�
 ![MVC](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1554212706354.png)
 MVVM是前端视图层的分层开发思想，分成了M、V和VM，其中VM是M和V之间的调度者。MVVM的思想，主要是为了让我们开发更加方便，因为MVVM提供了数据的双向绑定（数据双向绑定由VM提供）。
 ![MVVM](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1554212936072.png)
+## 三、Vue与MVVM
+首先我们用一段vue中最简单的代码来解释下vue中MVVM的体现。
+![enter description here](https://markdown.xiaoshujiang.com/img/spinner.gif "[[[1554215308222]]]" )
