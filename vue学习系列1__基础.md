@@ -12,4 +12,5 @@ MVVM是前端视图层的分层开发思想，分成了M、V和VM，其中VM是M
 ![MVVM](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1554212936072.png)
 ## 三、Vue与MVVM
 首先我们用一段vue中最简单的代码来解释下vue中MVVM的体现。
-![enter description here](https://markdown.xiaoshujiang.com/img/spinner.gif "[[[1554215308222]]]" )
+![enter description here](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1554215308222.png)
+从这段代码中，作为显示的部分就是作为V，vue的实例则是作为一个调度者也就是所谓的VM，以我们后端的思维，我们知道M指的是model，也就是数据的模型，这样我们就可以很清晰的知道data就是M，至此MVVM就在VUE中体现出来了。
