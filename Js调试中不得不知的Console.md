@@ -42,6 +42,7 @@ assert函数是对输入的值进行断言，相信有写过单元测试的读�
 ## 七、console.trace()
 调试JavaScript程序时，有时需要打印函数调用的栈信息，这可以通过使用console.trace()来实现，此方法一般用来显示当前执行的代码在堆栈中的调用路径，可清洗的看到被调用的过程。
 ![console.trace()](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1555162908800.png)
+## 八、console.time()
 
 
 
