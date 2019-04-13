@@ -19,7 +19,7 @@ console.log(msg, values)；这种跟C#的string.Format()有点像，console.log(
 ②、整数与浮点数一致我们这里就不过多举例了：
 ![console.log()整数格式化输出](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1555143915587.png)
 ③、对于object对象的格式化输出就有比较大区别了，当为%o时输出和不使用格式化输出打印出来的结果一样，当为%O时，可以看到对象的各个属性，比如我们打印一个DOM节点，%o打印的是此节点及其子节点，%O打印的是是该dom节点各个对象属性。
-![console.log()对象输出](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1555144127890.png)
+![console.log()对象格式化输出](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1555144127890.png)
 ④、css样式输出，样式会在%c后面都加上这个样式
 ![enter description here](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1555144782291.png)
 ## 二、console.dir()
