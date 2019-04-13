@@ -31,6 +31,7 @@ console.log(msg, values)；这种跟C#的string.Format()有点像，console.log(
 令人意外的是，很多人都不知道有这个方法，其作用是当我们想对一个复杂的对象进行输出时，使用console.log()往往是输出一些不能一目了然的数据，此时console.table()就能帮我们把这个对象整理成一个列表，以便于我们很清晰的看到数据。
 ![console.table()](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1555145465913.png)
 ## 四、console.warn()
-
+这个方法跟console.log()几乎一致，唯一的区别就是浏览器会对其有不一样的对待，会输出一个警告。
+![enter description here](https://markdown.xiaoshujiang.com/img/spinner.gif "[[[1555145715981]]]" )
 
 
