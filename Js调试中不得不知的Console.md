@@ -36,5 +36,6 @@ console.log(msg, values)；这种跟C#的string.Format()有点像，console.log(
 ## 五、console.assert()
 assert函数是对输入的值进行断言，相信有写过单元测试的读者们都很熟悉了。
 ![console.assert()](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1555161925328.png)
+## 六、
 
 
