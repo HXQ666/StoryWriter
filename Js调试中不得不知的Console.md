@@ -5,4 +5,4 @@ console.log()这个方法是前端人员最熟悉的了，几乎我们每天都�
 ![](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1555141882360.png)
 当我们要去比对两个对象时，想让这两个对象整齐的在两边，这时console.log()就能帮上我们的忙。
 2、格式化输出
-
+console.log(msg, values)
