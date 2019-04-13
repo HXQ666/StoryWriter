@@ -57,9 +57,8 @@ console.clear() 方法在执行成功后，会在控制台输出: "Console was c
 ![console.clear()](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1555168724319.png)
 ![console.clear()](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1555168752421.png)
 ## 总结
-在js调试中，虽然console对象的有些方法我们也很少用到，但是我们不能单纯只会一个console.log(),了解并学会使用其他方法，对我们在调试过程中起到了很关键的作用，使我们的效率能更高。关于此对象的所有用法，本文参考了[菜鸟教程](http://www.runoob.com/jsref/obj-console.html)的部分文章,想深入学习的读者可以继续移步学习.
+在js调试中，虽然console对象的有些方法我们也很少用到，但是我们不能单纯只会一个console.log(),了解并学会使用其他方法，对我们在调试过程中起到了很关键的作用，使我们的效率能更高。关于此对象的所有用法，本文参考了[菜鸟教程](http://www.runoob.com/jsref/obj-console.html)的部分文章,想深入学习的读者可以继续移步学习。
 笔者水平有限，本文若有不对之处，请留言指正，不胜感激！
-https://developer.mozilla.org/zh-CN/docs/Web/API/Console
 
 
 
