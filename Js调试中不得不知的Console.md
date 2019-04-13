@@ -39,6 +39,8 @@ assert函数是对输入的值进行断言，相信有写过单元测试的读�
 ## 六、console.count()
 此方法是用来统计count被调用的次数。
 ![console.count()](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1555162509950.png)
+## 七
+调试JavaScript程序时，有时需要打印函数调用的栈信息，这可以通过使用console.trace()来实现
 
 
 
