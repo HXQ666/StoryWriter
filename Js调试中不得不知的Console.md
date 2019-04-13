@@ -23,6 +23,7 @@ console.log(msg, values)；这种跟C#的string.Format()有点像，console.log(
 ④、css样式输出，样式会在%c后面都加上这个样式
 ![enter description here](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1555144782291.png)
 ## 二、console.dir()
-
+这个方法在大部分时候都跟console.log()一致，但是还是略有不同。
+![enter description here](https://markdown.xiaoshujiang.com/img/spinner.gif "[[[1555145034566]]]" )
 
 
