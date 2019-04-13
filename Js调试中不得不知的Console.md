@@ -33,5 +33,7 @@ console.log(msg, values)；这种跟C#的string.Format()有点像，console.log(
 ## 四、console.warn()
 这个方法跟console.log()几乎一致，唯一的区别就是浏览器会对其有不一样的对待，会输出一个警告。
 ![console.warn()](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1555145715981.png)
+## 五、console.assert()
+
 
 
