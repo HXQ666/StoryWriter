@@ -46,3 +46,8 @@ assert函数是对输入的值进行断言，相信有写过单元测试的读�
 
 
 
+## 总结
+https://developer.mozilla.org/zh-CN/docs/Web/API/Console
+
+
+
