@@ -25,6 +25,7 @@ console.log(msg, values)；这种跟C#的string.Format()有点像，console.log(
 ## 二、console.dir()
 这个方法在大部分时候都跟console.log()一致，但是还是略有不同。
 ![enter description here](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1555145034566.png)
-在查询DOM结构时，更能体现出两者的不同
+在查询DOM结构时，更能体现出两者的不同。console.log(element)打印的dom结构，而console.dir(element)打印的则是整个dom对象。
+![enter description here](https://markdown.xiaoshujiang.com/img/spinner.gif "[[[1555145222570]]]" )
 
 
