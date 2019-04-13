@@ -51,6 +51,8 @@ console.group() 方法用于设置分组信息的起始位置，该位置之后�
 console.groupEnd() 方法用于结束分组标签。
 使用 console. groupCollapsed() 方法来设置折叠的分组信息。
 ![console.group()与console.groupEnd()](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1555168565852.png)
+## 十、console.clear()
+
 ## 总结
 https://developer.mozilla.org/zh-CN/docs/Web/API/Console
 
