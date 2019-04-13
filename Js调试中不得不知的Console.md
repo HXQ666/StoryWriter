@@ -45,7 +45,7 @@ assert函数是对输入的值进行断言，相信有写过单元测试的读�
 ## 八、console.time()与console.timeEnd()
 console.time() 方法是作为计算器的起始方法。该方法一般用于测试程序执行的时长。
 console.timeEnd() 方法为计算器的结束方法，并将执行时长显示在控制台。如果一个页面有多个地方需要使用到计算器，可以添加标签参数来设置。
-![enter description here](https://markdown.xiaoshujiang.com/img/spinner.gif "[[[1555168186343]]]" )
+![console.time()与console.timeEnd()](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1555168186343.png)
 
 ## 总结
 https://developer.mozilla.org/zh-CN/docs/Web/API/Console
