@@ -54,6 +54,7 @@ console.groupEnd() 方法用于结束分组标签。
 ## 十、console.clear()
 console.clear() 方法用于清除控制台所有信息。
 console.clear() 方法在执行成功后，会在控制台输出: "Console was cleared"。
+![enter description here](https://markdown.xiaoshujiang.com/img/spinner.gif "[[[1555168724319]]]" )
 ## 总结
 https://developer.mozilla.org/zh-CN/docs/Web/API/Console
 
