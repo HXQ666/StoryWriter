@@ -24,9 +24,9 @@ console.log(msg, values)；这种跟C#的string.Format()有点像，console.log(
 ![enter description here](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1555144782291.png)
 ## 二、console.dir()
 这个方法在大部分时候都跟console.log()一致，但是还是略有不同。
-![enter description here](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1555145034566.png)
+![console.dir()](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1555145034566.png)
 在查询DOM结构时，更能体现出两者的不同。console.log(element)打印的dom结构，而console.dir(element)打印的则是整个dom对象。
-![enter description here](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1555145222570.png)
+!console.dir()](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1555145222570.png)
 ## 三、console.table()
 令人意外的是，很多人都不知道有这个方法，其作用是当我们想对一个复杂的对象进行输出时，使用console.log()往往是输出一些不能一目了然的数据，此时console.table()就能帮我们把这个对象整理成一个列表，以便于我们很清晰的看到数据。
 ![console.table()](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1555145465913.png)
