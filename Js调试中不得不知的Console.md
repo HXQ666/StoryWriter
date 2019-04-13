@@ -34,8 +34,11 @@ console.log(msg, values)；这种跟C#的string.Format()有点像，console.log(
 这个方法跟console.log()几乎一致，唯一的区别就是浏览器会对其有不一样的对待，会输出一个警告。
 ![console.warn()](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1555145715981.png)
 ## 五、console.assert()
-assert函数是对输入的值进行断言，相信有写过单元测试的读者们都很熟悉了。
+assert函数是对输入的值进行断言，相信有写过单元测试的读者们都很熟悉了。当
 ![console.assert()](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1555161925328.png)
-## 六、
+## 六、console.count()
+此方法是用来统计count被调用的次数。
+![console.count()](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1555162509950.png)
+
 
 
