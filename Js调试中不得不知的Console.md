@@ -47,7 +47,7 @@ console.time() 方法是作为计算器的起始方法。该方法一般用于�
 console.timeEnd() 方法为计算器的结束方法，并将执行时长显示在控制台。如果一个页面有多个地方需要使用到计算器，可以添加标签参数来设置。
 ![console.time()与console.timeEnd()](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1555168186343.png)
 ## 九、console.group()与console.groupEnd()
-
+console.group() 方法用于设置分组信息的起始位置，该位置之后的所有信息将写入分组。
 ## 总结
 https://developer.mozilla.org/zh-CN/docs/Web/API/Console
 
