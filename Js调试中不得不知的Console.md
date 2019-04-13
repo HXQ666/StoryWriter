@@ -6,7 +6,6 @@ console.log()这个方法是前端人员最熟悉的了，几乎我们每天都�
 当我们要去比对两个对象时，想让这两个对象整齐的在两边，这时console.log()就能帮上我们的忙。
 2、格式化输出
 console.log(msg, values)；这种跟C#的string.Format()有点像，console.log()能支持字符串、整数、浮点数、object对象以及css样式的格式化输出。占位符及其描述如下表。
-console.log()格式化输出对照表
 | 占位符 | 描述       |
 | ------ | ---------- |
 | %s     | 字符串     |
