@@ -52,7 +52,8 @@ console.groupEnd() 方法用于结束分组标签。
 使用 console. groupCollapsed() 方法来设置折叠的分组信息。
 ![console.group()与console.groupEnd()](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1555168565852.png)
 ## 十、console.clear()
-
+console.clear() 方法用于清除控制台所有信息。
+console.clear() 方法在执行成功后，会在控制台输出: "Console was cleared"。
 ## 总结
 https://developer.mozilla.org/zh-CN/docs/Web/API/Console
 
