@@ -1,6 +1,7 @@
-## 一、遇见Vue
+## 遇见Vue
 #### 1.什么是Vue 
-Vue是一套用于构建用户界面的渐进式JavaScript框架。-->[Vue官网传送门](https://cn.vuejs.org/)
+Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式JavaScript框架。
+-->[Vue官网传送门](https://cn.vuejs.org/)
 #### 2.为什么学习Vue
 每个人学习Vue的目的各不相同，于我而言，我比较喜欢去接触新鲜事物，喜欢去学习当前技术的流行趋势，Vue这几年越来越火，凭借着其简单小巧，易学易上手而广受技术开发者的使用，我也深感自己在前端部分了解的不是很深，想做一名全栈开发，Vue就是一个必备的技能。
 本系列学习主要是以官网为主，网上资料为辅，若涉及到他人版权，将会在文末标注。
@@ -19,3 +20,26 @@ Vue是一套用于构建用户界面的渐进式JavaScript框架。-->[Vue官网
 ```
 ③.NPM安装
 通过使用webpack和CLI的使用，来安装Vue。
+
+#### 4.Vue在Web开发中常见的高级功能
+①.解耦视图和数据  
+②.可复用的组件
+③.前端路由技术
+④.状态管理
+⑤.虚拟DOM
+
+#### 5.最简单的Vue代码
+```
+<body>
+    <div id="app">{{message}}</div>
+    <script src="./js/vue.js"></script>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data:{
+                message:"hello world"
+            }
+        })
+    </script>
+</body>
+```
