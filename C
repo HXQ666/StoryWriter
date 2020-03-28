@@ -24,20 +24,31 @@
 	var query = table.where((x, index)=> index >= start && index <= end);
 ```
 
-### 3.First()、FirstOrDefault()、Last()和LastOrDefault()
+#### 3.First()、FirstOrDefault()、Last()和LastOrDefault()
 与Where()类似，但不同的是First()只会返回满足条件的第一个序列元素，若是元素不存在时，First()会抛出异常，FirstOrDefault()则是会返回元素的默认值。
 Last()、LastOrDefault()与First()、FirstOrDefault()正好相反，它们返回序列中符合条 件的最后一个元素，若是元素不存在时，Last()会抛出异常，LastOrDefault()则是会返回元素的默认值
 ```
-
+int[] array = {1, 2, 3, 4};
+int item = array.First(x=>x%2 == 0);//2
+int item = array.FirstOrDefault(x=>x == 5);//0
+int item = array.Last();//4
+int item =  array.LastOrDefault();//4
+```
+#### 4.Single()和SingleOrDefault()
+Single()与First()类似。但是Single()要求序列中有且只有一个满足条件的项，否则抛出异常，SingleOrDefault()在无满足条件项时，返回默认值。
+```
+int[] array = {1, 2};
+int item = array.Single();//抛出异常
 ```
 
-#### 3.Distinct()
+
+#### 5.Distinct()
 大都数人一看到这个词就知道他的用法，Distinct()用于提出序列中重复的数据，并返回其余的所有数据。如：
 ```
 int[] array = {2,2,3,3,4,4,5,5};
 var query = array.Distinct();//[2,3,4,5]
 ```
-#### 4.Cast()
+#### 6.Cast()
  Cast用于将非泛型序列转换为泛型序列 IEnumerable<T>。当某一序列项无法成功转换时，则会抛出异常
  ```
  ArrayList list = new ArrayList();
@@ -46,11 +57,11 @@ var query = array.Distinct();//[2,3,4,5]
  var query=list.Cast<int>();//异常:  System.InvalidCastException: 指定的转换无效
  ```
  
-#### 5.GroupBy()
+#### 7.GroupBy()
 跟在sql中作用一致，GroupBy()就是用作分组的。
 GroupBy()返回了一个IEnumerable<IGrouping<TKey,TSource>>的借口类型，我们查看接口可知，这个，IGrouping<TKey,TSource>也是一个序列，只是多了一个Key属性，并且依据 Key进行了分组。
 
-#### 6.Intersect()和Except()
+#### 8.Intersect()和Except()
 Intersect()返回两个序列中相同元素构成的序列，如：
 ```
 int[] array1 = { 2,3,4,5};
@@ -63,7 +74,7 @@ int[] array1 = { 2,3,4,5};
 int[] array2 = {2,3,6,7};
 var query = array1.Except(array2);//4,5
 ```
-#### 7.OrderBy()、ThenBy()、OrderByDescending()和ThenByDescending()
+#### 9.OrderBy()、ThenBy()、OrderByDescending()和ThenByDescending()
 OrderyBy与OrderByDescending()很好理解，一个是升序一个是降序排列。如:
 ```
 var query = table.OrderBy(x=>x.time);//对时间进行升序排列
@@ -71,7 +82,7 @@ var queryDesc = table.OrderByDescending(x=>x.time);//对时间进行降序排列
 ```
 那么ThenBy()与ThenByDescending是干嘛用的呢？当我们需要一个较为复杂的排序，先按时间进行排序，再按名字进行排序，那么我们此时就要用到这两个方法了。因为ThenBy()是在IOrderedEnumerable<T>上定义的扩展方法，因此不能直接在IEnumrable<T>上调用，而在这四个排序方法返回的都是IOrderedEnumerable<T>,故可以在后面直接调用。
 
-#### 8.Take()、TakeWhile()、Skip()和SkipWhile()
+#### 10.Take()、TakeWhile()、Skip()和SkipWhile()
 Take()方法返回原序列中的前N个元素构成的新序列，如：
 ```
 var query = table.Take(3);//取前3个元素
@@ -86,7 +97,7 @@ Take()与Skip()这两个运算符在Linq to sql 中常用作分页。如：
 ```
 var query = table.Skip(10).Take(10);//每页10条数据，显示第二页数据
 ```
-#### 9.Zip()
+#### 11.Zip()
 Zip()对两个序列中位置相同的两个元素进行操作，基于两个元素的操作结果返回一个新 的元素。如果两个序列的长度不相等，则以长度短的为准。如：
 ```
 
@@ -100,7 +111,7 @@ var query = array1.Zip(array2, (x,y) => String.Format("{0},{1}", x, y));
 
 ```
 
-#### 10.Concat()和Union()
+#### 12.Concat()和Union()
 Concat()运算符用于连接两个序列。如：
 ```
 int[] array1 = { 3, 1, 2 };
@@ -113,3 +124,9 @@ int[] array1 = { 3, 1, 2 };
 int[] array2 = { 2, 3, 5 };
 var query = array1.Union(array2);//  3,1,2,5
 ```
+#### 13.Contains()、Any()
+Contains()判断某一个元素是否存在于序列中，Any()则是判断序列中是否存在满足表达式的元素，两者返回的都是bool，满足则返回true。
+
+## 总结
+Linq在我们需要操作数据的代码中应用频繁，它具有延迟加载的概念，只有在数据上调用聚合函数时才会执行查询操作，对我们很多操作都提供了极大地便利。学好Linq在EF等ORM框架中也能更快速的开发。
+本文借鉴了张子阳老师的《net之美》第五章LINQ的部分内容，在此表示感谢。
