@@ -26,25 +26,49 @@ Docker应用于Web应用的自动化打包和发布，它能快速，一致地�
 sudo yum update
 
 ```
-3. 安装所需软件
+ 3. 安装所需软件
 ```
 sudo yum install -y yum-utils device-mapper-persistent-data lvm2
 ```
-4. 设置yum源
+ 4. 设置yum源
 ```
  sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 ```
-5. 安装Docker
+ 5. 安装Docker
 ```
 sudo yum install docker-ce
 ```
-6. 启动并加入开机启动
+ 6. 启动并加入开机启动
 ```
 sudo systemctl start docker
 sudo systemctl enable docker
 ```
-7. 验证安装是否成功(有client和service两部分表示docker安装启动都成功了)
+ 7. 验证安装是否成功(有client和service两部分表示docker安装启动都成功了)
 ```
 docker version
 ```
 ![验证Docker是否安装成功](https://markdown.xiaoshujiang.com/img/spinner.gif "[[[1592125656728]]]" )
+## 四、在Docker中安装应用(以安装Redis为例)
+ 8. 拉取最新版Redis镜像
+```
+docker pull redis:latest
+```
+ 9. 运行容器(redis-H为容器名称)
+```
+docker run -itd --name redis-test -p 6379:6379 redis
+```
+ 10. 用Redis客户端查看是否安装成功
+![Redis](https://markdown.xiaoshujiang.com/img/spinner.gif "[[[1592126623846]]]" )
+## 五、部署Docker可视化工具Portainer
+ 1. 拉取Portainer镜像
+ ```
+ docker pull portainer/portainer
+ ```
+ 2. 部署单机版Portainer
+ ```
+ docker run -d -p 9000:9000 --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data --name prtainer-H portainer/portainer
+ ```
+ ![Portainer](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1592127317705.png)
+ 若需汉化，请自行百度。
+ ## 六、写在结尾
+ 本文为Docker基础普及知识，借鉴了网上一些教程(如：菜鸟教程)，旨在自己的学习，也欢迎各位同学/大佬评论区留言一起学习指导。
