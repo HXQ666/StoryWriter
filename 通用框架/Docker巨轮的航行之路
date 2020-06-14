@@ -57,8 +57,6 @@ docker pull redis:latest
 ```
 docker run -itd --name redis-test -p 6379:6379 redis
 ```
- 10. 用Redis客户端查看是否安装成功
-![Redis](https://markdown.xiaoshujiang.com/img/spinner.gif "[[[1592126623846]]]" )
 ## 五、部署Docker可视化工具Portainer
  1. 拉取Portainer镜像
  ```
@@ -68,7 +66,6 @@ docker run -itd --name redis-test -p 6379:6379 redis
  ```
  docker run -d -p 9000:9000 --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data --name prtainer-H portainer/portainer
  ```
- ![Portainer](https://www.github.com/HXQ666/StoryWriterImg/raw/master/小书匠/1592127317705.png)
  若需汉化，请自行百度。
  ## 六、写在结尾
  本文为Docker基础普及知识，借鉴了网上一些教程(如：菜鸟教程)，旨在自己的学习，也欢迎各位同学/大佬评论区留言一起学习指导。
