@@ -47,7 +47,6 @@ sudo systemctl enable docker
 ```
 docker version
 ```
-![验证Docker是否安装成功](https://markdown.xiaoshujiang.com/img/spinner.gif "[[[1592125656728]]]" )
 ## 四、在Docker中安装应用(以安装Redis为例)
  8. 拉取最新版Redis镜像
 ```
