@@ -1,1 +1,50 @@
-11
+## 一、什么是Docker
+Docker 是一个开源的应用容器引擎，基于 Go 语言 并遵从 Apache2.0 协议开源。  
+Docker 可以让开发者打包他们的应用以及依赖包到一个轻量级、可移植的容器中，然后发布到任何流行的 Linux 机器上，也可以实现虚拟化。  
+容器是完全使用沙箱机制，相互之间不会有任何接口（类似 iPhone 的 app）,更重要的是容器性能开销极低。  
+Docker应用于Web应用的自动化打包和发布，它能快速，一致地交付您的应用程序，支持响应式部署和扩展，可在同一硬件上运行更多工作负载。
+## 二、Docker的三个基本概念
+ 1. 镜像(Image)：相当于是一个root文件系统
+ 2. 容器(Container)：容器是镜像运行时的实体。
+ 3. 仓库(Repository)：仓库可看成一个代码控制中心，用来保存镜像
+ ## 三、在Linux中安装Docker
+ 本文选用一台全新刚重置完的Centos来安装Docker
+ 
+ 1. 如果已经安装过Docker，需移除老版本Docker(因为本台机器全新，所以无需此步)
+ ```
+ sudo yum remove docker 
+                  docker-client 
+                  docker-client-latest 
+                  docker-common 
+                  docker-latest 
+                  docker-latest-logrotate 
+                  docker-logrotate 
+                  docker-engine
+```
+2. 更新yum
+```
+sudo yum update
+
+```
+3. 安装所需软件
+```
+sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+```
+4. 设置yum源
+```
+ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+```
+5. 安装Docker
+```
+sudo yum install docker-ce
+```
+6. 启动并加入开机启动
+```
+sudo systemctl start docker
+sudo systemctl enable docker
+```
+7. 验证安装是否成功(有client和service两部分表示docker安装启动都成功了)
+```
+docker version
+```
+![验证Docker是否安装成功](https://markdown.xiaoshujiang.com/img/spinner.gif "[[[1592125656728]]]" )
