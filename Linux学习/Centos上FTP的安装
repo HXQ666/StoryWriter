@@ -1,1 +1,30 @@
 
+本文采用的是阿里云服务器centeros 7.3系统
+## 1.安装ftp
+`
+yum -y install vsftpd
+`
+## 2.启动ftp
+`
+systemctl start vsftpd.service
+`
+## 3.查看启动状态是否正常
+`
+systemctl status vsftpd.service
+`
+## 4.打开阿里云端口
+若是ECS，则需要添加安全组规则，打开端口21/22
+若是轻量级服务器，则打开防火墙21/22端口
+## 5.配置用户文件
+`
+vi /etc/vsftpd/ftpusers
+`
+可先查看下vsftpd.conf文件中Userlist_enable与Userlist_deny(若是没有这个属性，则默认为YES)
+在userlist_enable=YES的情况下，如果userlist_deny=YES的话，那列在user_list文件中的用户就会被禁止访问ftp, 也就是相当于黑名单，将需要访问ftp的用户注释掉即可；
+如果userlist_deny=NO，则在文件中的用户就会被允许访问ftp,相当于是白名单；
+
+## 6.重启ftp
+`
+Systemctl restart vsftpd.service
+`
+然后用ftp工具连接测试下即可！
